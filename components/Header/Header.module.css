@@ -1,0 +1,13 @@
+.headerDiv {
+  min-height: 64px;
+  background-color: black;
+  color: white;
+}
+
+.headerButton {
+  color: white;
+}
+
+.headerButton :hover {
+  color: red;
+}
