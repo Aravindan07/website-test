@@ -1,0 +1,28 @@
+.jumbotronContainer {
+  margin-top: 11px;
+  background-image: url("/assets/images/jumbotron-bg.jpg");
+  height: 100%;
+  max-height: 600px;
+  background-size: cover;
+  border-radius: 17px;
+  padding-left: 50px;
+  padding-top: 69px;
+  box-sizing: border-box;
+}
+
+#titleText {
+  color: #F9472A;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 59px;
+}
+
+#subText {
+  color: #373737;
+  line-height: 29px;
+}
+
+#smallText {
+  font-size: 18px;
+  line-height: 21px;
+}

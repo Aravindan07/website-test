@@ -1,11 +1,14 @@
 .headerDiv {
   min-height: 64px;
-  background-color: black;
+  background-color: #FAFAFA;
   color: white;
+  padding: 1.1rem 6.375rem 1.1rem 7.3rem;
 }
 
 .headerButton {
-  color: white;
+  color: #000;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .headerButton :hover {
