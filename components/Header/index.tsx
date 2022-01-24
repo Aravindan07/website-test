@@ -1,14 +1,19 @@
 import { Row, Col, Button } from 'antd'
-import { MenuFoldOutlined } from '@ant-design/icons'
+// import { MenuFoldOutlined } from '@ant-design/icons'
 import Link from 'next/link'
-import Image from 'next/image';
+import Image from 'next/image'
 
 import styles from './Header.module.css'
 const Header = () => {
 	return (
 		<Row className={styles.headerDiv} justify='space-between' align='middle'>
 			<Col flex='none'>
-				<Image src="/assets/images/leap-club-logo.png" alt='leap club logo' width={70} height={70} />
+				<Image
+					src='/assets/images/leap-club-logo.png'
+					alt='leap club logo'
+					width={70}
+					height={70}
+				/>
 			</Col>
 			<Col flex='auto'></Col>
 
@@ -18,7 +23,7 @@ const Header = () => {
 				</Button>
 				<Button type='text' className={styles.headerButton}>
 					<Link href='/careers'>
-						<a>we're hiring</a>
+						<a>we`re hiring</a>
 					</Link>
 				</Button>
 				<Button type='text' className={styles.headerButton}>
