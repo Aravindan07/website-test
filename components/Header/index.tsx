@@ -1,5 +1,6 @@
 import { Row, Col, Button } from 'antd'
 import { MenuFoldOutlined } from '@ant-design/icons'
+import Link from 'next/link'
 
 import styles from './Header.module.css'
 const Header = () => {
@@ -10,13 +11,21 @@ const Header = () => {
 
 			<Col flex='none'>
 				<Button type='text' className={styles.headerButton}>
-					Text Button
+					home
 				</Button>
 				<Button type='text' className={styles.headerButton}>
-					Text Button
+					<Link href='/careers'>
+						<a>we're hiring</a>
+					</Link>
 				</Button>
 				<Button type='text' className={styles.headerButton}>
-					Text Button
+					about us
+				</Button>
+				<Button type='text' className={styles.headerButton}>
+					blog
+				</Button>
+				<Button type='text' className={styles.headerButton}>
+					testimonials
 				</Button>
 			</Col>
 			<Col flex='none'>

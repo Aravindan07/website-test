@@ -1,7 +1,8 @@
+import { Col, Row } from 'antd'
+import Jumbotron from 'components/Jumbotron'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Layout from 'components/Layout'
-import { Scrollbars } from 'react-custom-scrollbars-2'
+
 const Home: NextPage = () => {
 	return (
 		<div>
@@ -11,13 +12,17 @@ const Home: NextPage = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Scrollbars universal autoHide style={{ height: '100vh' }}>
-				<Layout>
-					<div style={{ minHeight: '150vh' }}>
-						<h4>asdfasdf</h4>
-					</div>
-				</Layout>
-			</Scrollbars>
+			<Row>
+				<Col span={12}>
+					<Jumbotron></Jumbotron>
+				</Col>
+				<Col span={12}>waitlist</Col>
+			</Row>
+			<Row>company logos</Row>
+			<Row> testimonials</Row>
+			<Row>video sneak peak</Row>
+			<Row>ad videos</Row>
+			<Row>end heading</Row>
 		</div>
 	)
 }

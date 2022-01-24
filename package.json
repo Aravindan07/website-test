@@ -10,6 +10,7 @@
 		"precommit": "lint-staged"
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "^1.7.1",
 		"antd": "^4.18.4",
 		"next": "12.0.8",
 		"next-plugin-antd-less": "^1.8.0",
