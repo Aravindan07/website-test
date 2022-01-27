@@ -8,18 +8,10 @@ function Waitlist() {
 	return (
 		<div className={styles.waitlistContainer}>
 			<Form layout='vertical' form={form}>
-				<Form.Item
-					className={styles.inputLabel}
-					style={{ marginBottom: '66px' }}
-					label='email'
-				>
+				<Form.Item className={styles.inputLabel} label='email'>
 					<Input className={styles.input} placeholder='gal@gadot.com' />
 				</Form.Item>
-				<Form.Item
-					className={styles.inputLabel}
-					style={{ marginBottom: '49px' }}
-					label='linkedin profile link'
-				>
+				<Form.Item className={styles.inputLabel} label='linkedin profile link'>
 					<Input
 						className={styles.input}
 						placeholder='we want to know you better'
@@ -27,7 +19,6 @@ function Waitlist() {
 				</Form.Item>
 				<Form.Item
 					className={styles.inputLabel}
-					style={{ marginBottom: '38px' }}
 					label={
 						<p>
 							phone number <br />
@@ -55,10 +46,19 @@ function Waitlist() {
 					</Button>
 				</Form.Item>
 			</Form>
-			<p className={styles.bottomText}>
-				we will email more info on the membership. we onboard a limited number
-				of members every month and sell out fast.
-			</p>
+			<div
+				style={{
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					width: '100%',
+				}}
+			>
+				<div className={styles.bottomText}>
+					we will email more info on the membership. we onboard a limited number
+					of members every month and sell out fast.
+				</div>
+			</div>
 		</div>
 	)
 }

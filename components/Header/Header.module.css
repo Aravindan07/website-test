@@ -1,16 +1,30 @@
 .headerDiv {
-  min-height: 64px;
-  background-color: #FAFAFA;
-  color: white;
-  padding: 1.1rem 6.375rem 1.1rem 7.3rem;
+	min-height: 64px;
+	background-color: #fafafa;
+	color: white;
+	padding: 1.1rem 6.375rem 1.1rem 7.3rem;
 }
 
 .headerButton {
-  color: #000;
-  font-size: 20px;
-  line-height: 23px;
+	color: #000;
+	font-size: 20px;
+	line-height: 23px;
+	cursor: pointer;
 }
 
-.headerButton :hover {
-  color: red;
+.headerButton:hover {
+	color: red;
+	/* background: radial-gradient(
+		100% 1267.36% at 0% 50%,
+		#f42b4d 0%,
+		#fa541a 100%
+	);
+	border-radius: 20px;
+	padding: 0.8rem 0.5rem; */
+}
+
+@media screen and (max-width: 760px) {
+	.headerDiv {
+		padding: 1rem;
+	}
 }

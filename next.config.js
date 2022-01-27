@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 // next.config.js
-const withAntdLess = require("next-plugin-antd-less");
+const withAntdLess = require('next-plugin-antd-less')
 
 module.exports = withAntdLess({
 	reactStrictMode: true,
 	// experimental: {
 	//   serverComponents: true,
 	// },
-	modifyVars: { "@primary-color": "red" }, // optional
+	modifyVars: { '@primary-color': 'red' }, // optional
 
 	// for Next.js ONLY
 	nextjs: {
@@ -15,8 +15,11 @@ module.exports = withAntdLess({
 	},
 
 	// Other Config Here...
+	images: {
+		domains: ['api.producthunt.com'],
+	},
 
 	webpack(config) {
-		return config;
+		return config
 	},
-});
+})

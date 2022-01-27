@@ -1,0 +1,21 @@
+#sneakPeakText {
+	font-size: 2.5rem;
+	line-height: 2.93rem;
+	color: #373737;
+	font-weight: 500;
+}
+
+.videoContainer {
+	height: 385px;
+	width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+	.videoContainer {
+		height: 220px;
+	}
+	#sneakPeakText {
+		font-size: 18px;
+		line-height: 21px;
+	}
+}

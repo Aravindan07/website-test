@@ -7,11 +7,9 @@ import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<Scrollbars universal autoHide style={{ height: '100vh' }}>
+		<Scrollbars autoHide style={{ height: '100vh' }} universal={true}>
 			<Layout>
-				<div style={{ minHeight: '150vh' }}>
-					<Component {...pageProps} />;
-				</div>
+				<Component {...pageProps} />
 			</Layout>
 		</Scrollbars>
 	)

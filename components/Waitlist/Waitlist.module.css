@@ -1,46 +1,66 @@
 .waitlistContainer {
-  background-color: #fff;
-  border-radius: 17px;
-  min-height: 560px;
-  margin-top: 50px;
-  padding: 2.75rem 2.93rem;
+	background-color: #fff;
+	border-radius: 17px;
+	min-height: 560px;
+	margin-top: 50px;
+	padding: 2.75rem 2.93rem;
 }
 
 .input {
-  border: 1px solid #C4C4C4;
-  border-radius: 5px;
-  font-family: "Work Sans";
-  padding: 12px 18px;
-  font-size: 1rem;
-line-height: 19px;
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	font-family: 'Work Sans';
+	padding: 12px 18px;
+	font-size: 1rem;
+	line-height: 19px;
 }
 
 .inputLabel {
-  font-weight: 600;
-font-size: 16px;
-line-height: 19px
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 55px;
 }
 
 .spanText {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
 }
 
 #buttonPrimary {
-  background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 19px;
-  text-align: center;
-  color: #FFFFFF;
-  height: 43px;
-  width:100%;
+	background: radial-gradient(
+		100% 1267.36% at 0% 50%,
+		#f42b4d 0%,
+		#fa541a 100%
+	);
+	border-radius: 30px;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 19px;
+	text-align: center;
+	height: 100%;
+	color: #ffffff;
+	height: 43px;
+	width: 100%;
 }
 
 .bottomText {
-  font-size: 10px;
-line-height: 12px;
-text-align: center
+	font-size: 10px;
+	line-height: 12px;
+	width: 80%;
+}
+
+@media screen and (max-width: 760px) {
+	.waitlistContainer {
+		margin-top: 100px;
+		padding: 0 23px;
+	}
+	.inputLabel {
+		margin-bottom: 32px;
+		font-size: 14px;
+	}
+	.input {
+		font-size: 14px;
+	}
 }
