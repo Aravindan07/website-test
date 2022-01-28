@@ -41,7 +41,6 @@
 	text-align: center;
 	height: 100%;
 	color: #ffffff;
-	height: 43px;
 	width: 100%;
 }
 
@@ -57,10 +56,35 @@
 		padding: 0 23px;
 	}
 	.inputLabel {
-		margin-bottom: 32px;
-		font-size: 14px;
+		margin-bottom: 2rem;
+		font-size: 0.8rem;
 	}
 	.input {
-		font-size: 14px;
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	.inputLabel label {
+		margin-bottom: 2rem;
+		font-size: 1.2rem;
+		line-height: 30px;
+	}
+	.input {
+		font-size: 1.2rem;
+	}
+	#buttonPrimary {
+		font-size: 1.5rem;
+		line-height: 29px;
+		padding: 1rem 2rem;
+	}
+	.waitlistContainer {
+		margin-bottom: 3rem;
+	}
+	.bottomText {
+		font-size: 1rem;
+		line-height: 22px;
+		width: 100%;
+		margin-left: 1rem;
 	}
 }

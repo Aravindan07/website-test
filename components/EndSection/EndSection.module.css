@@ -42,18 +42,39 @@
 
 @media screen and (max-width: 760px) {
 	#endSectionText {
-		font-size: 22px;
-		line-height: 26px;
+		font-size: 1.37;
+		line-height: 1.6rem;
 		text-align: center;
 	}
 	#endSectionTextHindi {
-		font-size: 18px;
+		font-size: 1.1rem;
 		text-align: center;
 	}
 	#buttonPrimary {
 		width: 100%;
 		padding: 1rem;
-		font-size: 18px;
-		line-height: 21px;
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	.endSectionWrapper {
+		margin: 5rem 0;
+	}
+	#endSectionText {
+		font-size: 2.5rem;
+		line-height: 2.6rem;
+		text-align: center;
+	}
+	#endSectionTextHindi {
+		font-size: 1.8rem;
+		text-align: center;
+	}
+	#buttonPrimary {
+		width: 30%;
+		padding: 1rem 2rem;
+		font-size: 2rem;
+		line-height: 1.8rem;
 	}
 }

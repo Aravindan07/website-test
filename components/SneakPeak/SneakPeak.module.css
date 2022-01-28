@@ -19,3 +19,11 @@
 		line-height: 21px;
 	}
 }
+
+@media screen and (min-width: 2500px) {
+	.videoContainer {
+		height: 450px;
+		width: 60%;
+		margin: 5rem 0;
+	}
+}

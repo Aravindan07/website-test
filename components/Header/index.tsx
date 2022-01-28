@@ -1,4 +1,4 @@
-import { Row, Col } from 'antd'
+import { Row, Col, Button } from 'antd'
 import { MenuOutlined } from '@ant-design/icons'
 // import Link from 'next/link'
 import Image from 'next/image'
@@ -32,8 +32,10 @@ const Header = () => {
 					<div className={styles.headerButton}>testimonials 🙋‍♀️</div>
 				</div>
 			</Col>
-			<Col flex='none'>
-				<MenuOutlined style={{ color: '#000', fontSize: '1.5rem' }} />
+			<Col xs={12} md={0}>
+				<div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+					<Button icon={<MenuOutlined />} size='large' />
+				</div>
 			</Col>
 		</Row>
 	)

@@ -28,3 +28,12 @@
 		padding: 1rem;
 	}
 }
+
+@media screen and (min-width: 2500px) {
+	.headerDiv {
+		padding: 1.5rem 14rem;
+	}
+	.headerButton {
+		font-size: 1.5rem;
+	}
+}

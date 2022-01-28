@@ -22,7 +22,7 @@ function MembersCompanies() {
 								<Image
 									src={company.img}
 									alt='companies logo'
-									width='60%'
+									width='100%'
 									height='100%'
 									// layout='fill'
 									objectFit='contain'
