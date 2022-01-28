@@ -17,7 +17,7 @@ const Header = () => {
 			</Col>
 			<Col flex='auto'></Col>
 
-			<Col xs={0} md={12}>
+			<Col xs={0} md={14}>
 				<div
 					style={{
 						display: 'flex',

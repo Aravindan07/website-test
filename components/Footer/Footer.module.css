@@ -1,6 +1,6 @@
 .footerContainer {
-	background-color: #000;
-	padding: 1.5rem 7.3rem 1.5rem 7.3rem;
+	background-color: #202125;
+	padding: 5rem 7.3rem 1.5rem 7.3rem;
 	width: 100%;
 	color: #fff;
 }
@@ -43,6 +43,9 @@
 }
 
 @media screen and (min-width: 2500px) {
+	.footerContainer {
+		padding: 5rem 50rem 1.5rem 50rem;
+	}
 	.socialHandles {
 		justify-content: flex-start;
 		margin: 1rem 1rem 1rem 0;
