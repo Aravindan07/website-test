@@ -11,12 +11,23 @@
 	justify-content: flex-start;
 }
 
+.companyDetailsWrapperRight {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
 .socialHandles {
 	display: flex;
 	align-items: center;
 	width: 100%;
 	justify-content: flex-start;
 	margin: 1rem 1rem 1rem 0;
+}
+
+.termsAndConditions {
+	display: flex;
+	justify-content: flex-end;
 }
 
 @media screen and (max-width: 760px) {
@@ -35,5 +46,14 @@
 	.socialHandles {
 		justify-content: flex-start;
 		margin: 1rem 1rem 1rem 0;
+	}
+	/* .companyDetailsWrapperRight {
+		align-items: flex-end;
+	} */
+}
+
+@media screen and (min-width: 4000px) {
+	.termsAndConditions {
+		justify-content: flex-start;
 	}
 }

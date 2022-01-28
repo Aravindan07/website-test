@@ -50,7 +50,7 @@ const Footer = () => {
 				</Col>
 
 				<Col xs={24} md={11}>
-					<div className={styles.companyDetailsWrapper}>
+					<div className={styles.companyDetailsWrapperRight}>
 						<a
 							href='https://www.producthunt.com/posts/leap-club?utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_souce=badge-leap-club'
 							target='_blank'
@@ -135,7 +135,7 @@ const Footer = () => {
 						copyright © 2021 konflake tech pvt. ltd. all rights reserved.
 					</Text>
 				</Col>
-				<Col xs={24} md={11} style={{ display: 'flex', justifyContent: 'end' }}>
+				<Col xs={24} md={11} className={styles.termsAndConditions}>
 					<Text style={{ color: '#fff' }}>
 						read our{' '}
 						<a
