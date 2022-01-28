@@ -1,14 +1,16 @@
 .jumbotronContainer {
 	margin-top: 11px;
 	height: 100%;
-	max-height: 600px;
+	min-height: 600px;
 	border-radius: 17px;
 	/* padding-left: 50px; */
 	padding-top: 69px;
 	box-sizing: border-box;
 	position: relative;
 	background-image: url('/assets/images/jumbotron-bg.jpg');
+	/* background-image: url('/assets/images/higer3.png'); */
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .jumbotronContainer::before {
@@ -41,6 +43,9 @@
 }
 
 @media screen and (min-width: 2500px) {
+	.jumbotronContainer {
+		/* margin-bottom: 1rem; */
+	}
 	#titleText {
 		font-size: 3.5rem;
 	}

@@ -17,12 +17,12 @@ function Testimonials() {
 				<img
 					src='/assets/images/ss-2.jpg'
 					alt='SS1'
-					className={styles.testimonial}
+					className={`${styles.testimonial}`}
 				/>
 				<img
 					src='/assets/images/ss-3.jpg'
 					alt='SS1'
-					className={styles.testimonial}
+					className={`${styles.testimonial}`}
 				/>
 				<img
 					src='/assets/images/ss-5.jpg'
@@ -32,8 +32,8 @@ function Testimonials() {
 				<img
 					src='/assets/images/ss-4.jpg'
 					alt='SS1'
-					className={styles.testimonial}
-					style={{ height: '215px', marginBottom: 0 }}
+					className={`${styles.testimonial} ${styles.lastImage}`}
+					style={{ marginBottom: 0 }}
 				/>
 			</Masonry>
 		</div>

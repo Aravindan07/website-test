@@ -22,11 +22,14 @@ const Header = () => {
 					style={{
 						display: 'flex',
 						justifyContent: 'space-between',
+						alignItems: 'center',
 						width: '100%',
 					}}
 				>
 					<div className={styles.headerButton}>home</div>
-					<div className={styles.headerButton}>we&apos;re hiring</div>
+					<div className={styles.headerButtonHighlighted}>
+						we&apos;re hiring
+					</div>
 					<div className={styles.headerButton}>about us</div>
 					<div className={styles.headerButton}>blog</div>
 					<div className={styles.headerButton}>testimonials 🙋‍♀️</div>

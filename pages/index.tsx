@@ -18,10 +18,10 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Row className={styles.mainSectionWrapper}>
-				<Col xs={24} md={10}>
+				<Col xs={24} md={12} xxl={9}>
 					<Jumbotron />
 				</Col>
-				<Col xs={24} md={10}>
+				<Col xs={24} md={11}>
 					<Waitlist />
 				</Col>
 			</Row>

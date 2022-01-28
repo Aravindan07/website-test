@@ -4,6 +4,7 @@
 	padding-bottom: 2.53rem;
 	display: flex;
 	justify-content: space-between;
+	/* padding: 2rem 7.3rem; */
 }
 
 .membersCompaniesWrapper {
@@ -54,6 +55,10 @@
 	.sneakPeakWrapper,
 	.testimonialsContainer,
 	.membersCompaniesWrapper {
-		padding: 0 14rem;
+		padding: 0 20rem;
+	}
+	.mainSectionWrapper {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
 	}
 }

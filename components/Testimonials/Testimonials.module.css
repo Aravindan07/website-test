@@ -10,12 +10,30 @@
 	margin: 0 1.3rem 0.8rem 1.3rem;
 }
 
+.lastImage {
+	height: 215px;
+}
+
 @media screen and (min-width: 2500px) {
 	.wrapper {
 		margin-top: 5rem;
 		margin-bottom: 5rem;
 		display: flex;
-		width: 50%;
+		width: 60%;
 		margin: 5rem auto;
+	}
+	.testimonialPragja {
+		max-height: 275px;
+		width: 100%;
+		object-fit: contain;
+	}
+	.testimonial {
+		width: 98%;
+		/* height: 100%; */
+		object-fit: contain;
+		/* margin: 1rem; */
+	}
+	.lastImage {
+		height: auto;
 	}
 }

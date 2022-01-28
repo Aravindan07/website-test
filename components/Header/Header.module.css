@@ -23,6 +23,20 @@
 	padding: 0.8rem 0.5rem; */
 }
 
+.headerButtonHighlighted {
+	color: #fff;
+	font-size: 20px;
+	line-height: 23px;
+	cursor: pointer;
+	padding: 0.8rem 0.5rem;
+	background: radial-gradient(
+		100% 1267.36% at 0% 50%,
+		#f42b4d 0%,
+		#fa541a 100%
+	);
+	border-radius: 20px;
+}
+
 @media screen and (max-width: 760px) {
 	.headerDiv {
 		padding: 1rem;
@@ -31,7 +45,7 @@
 
 @media screen and (min-width: 2500px) {
 	.headerDiv {
-		padding: 1.5rem 14rem;
+		padding: 1.5rem 20rem;
 	}
 	.headerButton {
 		font-size: 1.5rem;
