@@ -21,6 +21,7 @@
 		display: flex;
 		width: 60%;
 		margin: 5rem auto;
+		padding: 1rem 1.5rem 0 0;
 	}
 	.testimonialPragja {
 		max-height: 275px;
