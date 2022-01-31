@@ -1,0 +1,46 @@
+.titleWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem 2rem 7.3rem;
+}
+
+#titleText {
+	font-weight: 600;
+	font-size: 2.1rem;
+	line-height: 2.5rem;
+	color: #202125;
+}
+
+.companyPitch {
+	background-color: #f6f6f6;
+	padding: 0rem 7.3rem 10rem 7.3rem;
+}
+
+#companyPitchText {
+	font-weight: normal;
+	font-size: 1.56rem;
+	line-height: 1.81rem;
+	color: #202125;
+}
+
+.teamMembersWrapper {
+	background: #fff;
+	padding: 5rem 7.3rem;
+}
+
+#foundingMembersSectionHeading {
+	font-weight: 500;
+	font-size: 2.1rem;
+	line-height: 2.5rem;
+	color: #202125;
+	margin-bottom: 3.1rem;
+}
+
+.teamMembersVideosWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+.perksSectionWrapper {
+	background-color: #fff;
+	padding: 5rem 7.3rem;
+}

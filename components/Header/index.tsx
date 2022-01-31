@@ -4,6 +4,7 @@ import { MenuOutlined } from '@ant-design/icons'
 import Image from 'next/image'
 
 import styles from './Header.module.css'
+import Link from 'next/link'
 const Header = () => {
 	return (
 		<Row className={styles.headerDiv} justify='space-between' align='middle'>
@@ -26,13 +27,31 @@ const Header = () => {
 						width: '100%',
 					}}
 				>
-					<div className={styles.headerButton}>home</div>
-					<div className={styles.headerButtonHighlighted}>
-						we&apos;re hiring
-					</div>
-					<div className={styles.headerButton}>about us</div>
-					<div className={styles.headerButton}>blog</div>
-					<div className={styles.headerButton}>testimonials 🙋‍♀️</div>
+					<Link href='/' passHref>
+						<div className={styles.headerButton}>home</div>
+					</Link>
+					<Link href='/careers' passHref>
+						<div className={styles.headerButtonHighlighted}>
+							we&apos;re hiring
+						</div>
+					</Link>
+					<Link href='/about' passHref>
+						<div className={styles.headerButton}>about us</div>
+					</Link>
+					<a
+						href='https://leap.substack.com/'
+						target='_blank'
+						rel='noreferrer noopener'
+					>
+						<div className={styles.headerButton}>blog</div>
+					</a>
+					<a
+						href='https://love.leap.club'
+						target='_blank'
+						rel='noreferrer noopener'
+					>
+						<div className={styles.headerButton}>testimonials 🙋‍♀️</div>
+					</a>
 				</div>
 			</Col>
 			<Col xs={12} md={0}>

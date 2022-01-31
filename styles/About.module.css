@@ -1,0 +1,183 @@
+.aboutSectionWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+#headingText {
+	font-size: 2.5rem;
+	font-weight: normal;
+	line-height: 59px;
+}
+.imageWrapper {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.whyExistWrapper {
+	background-color: #fff;
+	padding: 5rem 7.3rem;
+}
+
+#whyExistDescription {
+	color: #333333;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+}
+
+.genderGraphWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+#genderGraphText {
+	font-weight: normal;
+	font-size: 2.5rem;
+	line-height: 3.06rem;
+	color: #000;
+}
+
+#genderGraphSubtext {
+	font-size: 1.56rem;
+	line-height: 1.8rem;
+	color: #000000;
+}
+
+.statsWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+.whatAreWeNotWrapper {
+	background-color: #fff;
+	padding: 5rem 7.3rem;
+}
+
+.pointsBox {
+	border-radius: 20px;
+	padding: 50px 36px 0 36px;
+	border: 1px solid #636565;
+	/* max-height: 322px; */
+	min-height: 322px;
+	display: flex;
+	flex-direction: column;
+}
+
+#pointHeading {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	color: #333333;
+	margin-bottom: 22px;
+}
+
+#pointDesc {
+	font-weight: normal;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #333333;
+}
+
+.currentOpeningsWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+#currentOpeningsText {
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	color: #000000;
+}
+
+#currentOpeningsButton {
+	background: radial-gradient(
+		100% 1267.36% at 0% 50%,
+		#f42b4d 0%,
+		#fa541a 100%
+	);
+	border-radius: 100px;
+	height: 100%;
+	padding: 1rem 90px;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.45rem;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 2500px) {
+	.aboutSectionWrapper,
+	.whyExistWrapper,
+	.genderGraphWrapper,
+	.statsWrapper,
+	.whatAreWeNotWrapper,
+	.currentOpeningsWrapper {
+		padding-left: 50rem;
+		padding-right: 50rem;
+	}
+	#pointsDesc {
+		font-size: 1.87rem;
+		line-height: 2.1rem;
+	}
+	#currentOpeningsText {
+		font-size: 2.5rem;
+		line-height: 2.9rem;
+	}
+	#currentOpeningsButton {
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.aboutSectionWrapper,
+	.whyExistWrapper,
+	.genderGraphWrapper,
+	.statsWrapper,
+	.whatAreWeNotWrapper,
+	.currentOpeningsWrapper {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	#headingText {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+	.imageWrapper {
+		justify-content: center;
+	}
+	.image {
+		width: 100%;
+		height: 100%;
+	}
+	#whyExistDescription {
+		font-size: 1rem;
+		line-height: 1.3rem;
+	}
+	#genderGraphText {
+		font-size: 2rem;
+		line-height: 2.7rem;
+	}
+	#genderGraphSubtext {
+		font-size: 1rem;
+		line-height: 1.3rem;
+	}
+	.pointsBox {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+	}
+	#currentOpeningsText {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	#currentOpeningsButton {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+	.teamImage {
+		margin: 1rem 0;
+	}
+}
