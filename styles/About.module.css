@@ -139,12 +139,12 @@
 	.statsWrapper,
 	.whatAreWeNotWrapper,
 	.currentOpeningsWrapper {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding: 2rem 1rem;
 	}
 	#headingText {
-		font-size: 2rem;
-		line-height: 2.5rem;
+		font-size: 1.375rem;
+		line-height: 1.625rem;
+		margin-bottom: 1.6rem;
 	}
 	.imageWrapper {
 		justify-content: center;
@@ -158,26 +158,42 @@
 		line-height: 1.3rem;
 	}
 	#genderGraphText {
-		font-size: 2rem;
-		line-height: 2.7rem;
+		font-size: 1.375rem;
+		line-height: 1.875rem;
 	}
 	#genderGraphSubtext {
 		font-size: 1rem;
 		line-height: 1.3rem;
 	}
 	.pointsBox {
-		margin-bottom: 2rem;
-		padding-bottom: 1rem;
+		margin-bottom: 1.5rem;
+		min-height: 175px;
+		padding: 1rem;
+	}
+	#pointHeading {
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+		margin-bottom: 0.8rem;
+	}
+
+	#pointDesc {
+		font-size: 1.125rem;
+		line-height: 1.31rem;
 	}
 	#currentOpeningsText {
-		font-size: 1.5rem;
-		line-height: 2rem;
+		font-size: 1.275rem;
+		line-height: 1.625rem;
 	}
 	#currentOpeningsButton {
 		padding-right: 1rem;
 		padding-left: 1rem;
+		padding: 0.5rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 	.teamImage {
-		margin: 1rem 0;
+		margin: 2rem 0;
+		margin-bottom: 1.5rem;
 	}
 }

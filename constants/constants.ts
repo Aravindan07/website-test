@@ -96,3 +96,226 @@ export const membersCompaniesImages = [
 		img: '/assets/images/columbia-asia.png',
 	},
 ]
+
+export const teamMembersPhotos = [
+	{
+		src: '/assets/images/ragini.png',
+		description:
+			'team 5 am club, knows what to order at every restaurant. always over orders.',
+	},
+	{
+		src: '/assets/images/anand.png',
+		description:
+			'the dad no one listens to. binges on red velvet ice cream after a run.',
+	},
+	{
+		src: '/assets/images/aanchal.png',
+		description:
+			'the first leap team member. when not watching gilmore girls, she enjoys travelling and eating pizza.',
+	},
+	{
+		src: '/assets/images/disha.png',
+		description:
+			'cooks an absolute mean lasagne and is in love with her 4 (low maintenance) plants.',
+	},
+	{
+		src: '/assets/images/sindhu.png',
+		description:
+			'an obsessive plant mom, marie kondo-ing her way through life. the duct tape that binds leap.',
+	},
+	{
+		src: '/assets/images/vishwani.png',
+		description:
+			'watches f1, makes great cocktails and (claims to) know astrology.',
+	},
+	{
+		src: '/assets/images/esha.png',
+		description:
+			'rom com movies, fancy home recipes, never gave her 8th grade exam (oh!).',
+	},
+	{
+		src: '/assets/images/pranav.png',
+		description:
+			'big fan of photography and of the engineering behind modern day cameras. leads everything tech@leap.',
+	},
+	{
+		src: '/assets/images/helene.png',
+		description:
+			'speaks reeaaaally fast. we couldnt understand what she wanted to do here. jk, spends her time writing funny stories, hiking.',
+	},
+	{
+		src: '/assets/images/kritika.png',
+		description:
+			'she is a f.r.i.e.n.d.s (super) fan, make-up hoarder, cuts her own hair.',
+	},
+	{
+		src: '/assets/images/karishma.png',
+		description:
+			'parallel parks like a pro. will mention this in the first 10 minutes of meeting you.',
+	},
+	{
+		src: '/assets/images/divya.png',
+		description:
+			"our resident poet is usually found reading and drinking at watson's bangalore.",
+	},
+	{
+		src: '/assets/images/desiree.png',
+		description:
+			'cannot sit still when she hears a beat, crochets to de-stress',
+	},
+	{
+		src: '/assets/images/ansh.png',
+		description: 'enjoys trying out different cuisines, playing PS and music.',
+	},
+	{
+		src: '/assets/images/aashray.png',
+		description:
+			'supports man united so not sure how long this friendship is going to last.',
+	},
+	{
+		src: '/assets/images/aditya.png',
+		description:
+			'spends his days tweeting or playing minekraft. the guy who sent a 20 min video on why he should join leap.',
+	},
+	{
+		src: '/assets/images/anshul.png',
+		description:
+			'watches f1, (claims to have) the best spotify playlists, (huge!) david dobrik fan.',
+	},
+	{
+		src: '/assets/images/denise.png',
+		description: 'cat mom who grooves to techno while binging on cheesecake.',
+	},
+	{
+		src: '/assets/images/meher.png',
+		description:
+			'prefers dogs>humans, always on the lookout for the best gin cocktails.',
+	},
+	{
+		src: '/assets/images/naitik.png',
+		description:
+			'our in-house skater boy. animations, biking and sleeping is his jam.',
+	},
+	{
+		src: '/assets/images/aravindan.png',
+		description:
+			'either watching or playing cricket (super fan), up for joining politics.',
+	},
+	{
+		src: '/assets/images/siladitya.png',
+		description:
+			'began his career as a cinematographer, big movie buff who is pro at making biryani.',
+	},
+	{
+		src: '/assets/images/ridhi.png',
+		description:
+			"early riser- you'll find her dozing off at late-night parties. loves experimenting with different cuisines.",
+	},
+	{
+		src: '/assets/images/namrata.png',
+		description:
+			'in-house tattoo and piercing lover who craves for dessert everyday at 1 am.',
+	},
+	{
+		src: '/assets/images/priyal.png',
+		description:
+			'loves exploring fancy real estate and equities. biggest dream is to own a place in beverly hills.',
+	},
+	{
+		src: '/assets/images/aishwarya.png',
+		description:
+			"usually found chasing neighborhood cats. obsessed with dark chocolate and 90's hip hop music.",
+	},
+	{
+		src: '/assets/images/angella.png',
+		description:
+			'loves her dog and cat in equal measure, paints mostly landscape + northern lights.',
+	},
+	{
+		src: '/assets/images/mridula.png',
+		description:
+			'an impromptu tripper, play her a bollywood song and she will rule the dance floor.',
+	},
+]
+
+export const emails = [
+	{
+		src: '/assets/images/email-1.png',
+		thumbnail: '/assets/images/email-1.png',
+		thumbnailWidth: 200,
+		thumbnailHeight: 174,
+		isSelected: false,
+	},
+	{
+		src: '/assets/images/email-2.png',
+		thumbnail: '/assets/images/email-2.png',
+		thumbnailWidth: 200,
+		thumbnailHeight: 174,
+		isSelected: false,
+	},
+	{
+		src: '/assets/images/email-3.png',
+		thumbnail: '/assets/images/email-3.png',
+		thumbnailWidth: 200,
+		thumbnailHeight: 174,
+		isSelected: false,
+	},
+	{
+		src: '/assets/images/email-4.png',
+		thumbnail: '/assets/images/email-4.png',
+		thumbnailWidth: 200,
+		thumbnailHeight: 174,
+		isSelected: false,
+	},
+]
+
+export const investors = [
+	{
+		id: 1,
+		src: '/assets/images/harpreet.png',
+		name: 'harpreet singh grover',
+		description: 'co-founder at cocubes.com',
+	},
+	{
+		id: 2,
+		src: '/assets/images/sweta.png',
+		name: 'sweta rau',
+		description: 'angel and venture investor',
+	},
+	{
+		id: 3,
+		src: '/assets/images/kunal-shah.png',
+		name: 'kunal shah',
+		description: 'founder at cred',
+	},
+	{
+		id: 4,
+		src: '/assets/images/amrish.png',
+		name: 'amrish rau',
+		description: 'ceo at pine labs',
+	},
+	{
+		id: 5,
+		src: '/assets/images/deepak.png',
+		name: 'deepak abbot',
+		description: 'co-founder at indiagold',
+	},
+	{
+		id: 6,
+		src: '/assets/images/kunal_bahl.png',
+		name: 'kunal bahl',
+		description: 'co-founder at snapdeal',
+	},
+	{
+		id: 7,
+		src: '/assets/images/rohit_bansal.png',
+		name: 'rohit bansal',
+		description: 'co-founder at snapdeal',
+	},
+	{
+		id: 8,
+		src: '/assets/images/Ankitha-Vasshistha.png',
+		name: 'ankitha vashistha',
+		description: 'founder at saha fund',
+	},
+]

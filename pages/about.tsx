@@ -1,17 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button, Col, Row, Typography } from 'antd'
 import StatsBox from 'components/StatsBox'
-// import WhyExist from 'components/WhyExist'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
 import styles from 'styles/About.module.css'
+import { useMediaQuery } from 'utils/useMediaQueries'
 
 const { Title, Text } = Typography
 
 function About() {
 	const router = useRouter()
+	const [width] = useMediaQuery()
 
 	return (
 		<div>
@@ -91,8 +92,8 @@ function About() {
 				<Col xs={24} md={12}>
 					<div
 						style={{
-							width: '100%',
-							height: '100%',
+							width: width > 800 ? '100%' : '200px',
+							height: width > 800 ? '100%' : '250px',
 							display: 'flex',
 							justifyContent: 'center',
 						}}
@@ -116,7 +117,7 @@ function About() {
 					<StatsBox
 						topText='65%'
 						bottomText='what women earn for performing the same work as men'
-						topBackground='linear-gradient(90deg, #202425 0%, #151515 100%)'
+						topBackground='#151515'
 					/>
 				</Col>
 				<Col xs={24} md={4}>
@@ -131,7 +132,7 @@ function About() {
 						topText='99%'
 						bottomText='women believe that a strong support group and network will advance
 								their careers'
-						topBackground='linear-gradient(90deg, #202425 0%, #151515 100%);'
+						topBackground='#151515'
 					/>
 				</Col>
 				<Col xs={24} md={4}>
@@ -184,10 +185,12 @@ function About() {
 						</Title>
 					</Col>
 					<Col xs={24} md={12}>
-						<div>
+						<div className={styles.teamImage}>
 							<img
 								src='/assets/images/team-photo.png'
 								alt='team members'
+								width='100%'
+								height='100%'
 								// layout='fill'
 								// objectFit='contain'
 							/>

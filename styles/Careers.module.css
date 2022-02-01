@@ -44,3 +44,142 @@
 	background-color: #fff;
 	padding: 5rem 7.3rem;
 }
+
+.jobsSectionWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+#jobsSectionHeading {
+	font-weight: normal;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	color: #202125;
+	margin-bottom: 3.1rem;
+}
+
+.jobsContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.sampleJobVideosWrapper {
+	background-color: #fff;
+	padding: 5rem 7.3rem;
+}
+
+.emailsSectionWrapper {
+	background-color: #fff;
+	padding: 5rem 7.3rem;
+}
+
+.teamMembersPhotosWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+.teamImageStyle {
+	height: 325px;
+	object-fit: contain;
+}
+
+.backedBySectionWrapper {
+	background-color: #fff;
+	padding: 5rem 7.3rem;
+}
+
+.companyCard {
+	min-height: 100px;
+}
+
+.investorsCard {
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#investorName {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	color: #000000;
+	margin: 1rem 0;
+}
+
+#investorDescription {
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	color: #000000;
+}
+
+#andMoreText {
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 29px;
+	text-align: center;
+	color: #f9472a;
+	margin-top: 44px;
+}
+
+.featuredOnWrapper {
+	background-color: #f6f6f6;
+	padding: 5rem 7.3rem;
+}
+
+@media screen and (max-width: 800px) {
+	.titleWrapper,
+	.companyPitch,
+	.teamMembersWrapper,
+	.teamMembersVideosWrapper,
+	.perksSectionWrapper,
+	.jobsSectionWrapper,
+	.sampleJobVideosWrapper,
+	.emailsSectionWrapper,
+	.teamMembersPhotosWrapper,
+	.backedBySectionWrapper,
+	.featuredOnWrapper {
+		padding: 2.5rem 1rem;
+		/* padding-right: 1rem; */
+	}
+
+	.teamImageStyle {
+		width: 100%;
+		height: 100%;
+	}
+
+	.investorsCard {
+		min-height: 100px;
+		display: flex !important;
+		flex-direction: column;
+	}
+
+	#titleText {
+		font-size: 1.375rem;
+		line-height: 1.625rem;
+	}
+
+	#companyPitchText {
+		font-size: 1rem;
+		line-height: 1.1rem;
+		margin-bottom: 1rem;
+	}
+
+	#foundingMembersSectionHeading {
+		font-size: 1.375rem;
+		line-height: 1.625rem;
+	}
+
+	#jobsSectionHeading {
+		font-size: 1.375rem;
+		line-height: 1.625rem;
+	}
+
+	.jobsContainer {
+		justify-content: center;
+	}
+}

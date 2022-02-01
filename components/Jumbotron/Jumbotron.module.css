@@ -43,9 +43,13 @@
 	line-height: 21px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
 	.jumbotronContainer {
-		max-height: 500px;
+		/* max-height: 500px; */
+		min-height: 300px;
+		background-color: #f6f6f6;
+		background-image: none;
+		padding-top: 0;
 	}
 	#titleText {
 		font-size: 1.5rem;

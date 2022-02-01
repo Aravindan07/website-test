@@ -1,9 +1,12 @@
 import { Row, Typography } from 'antd'
+import { useMediaQuery } from 'utils/useMediaQueries'
 const { Title, Text } = Typography
 
 import styles from './Jumbotron.module.css'
 
 const Jumbotron = () => {
+	const [width] = useMediaQuery()
+
 	return (
 		<div className={styles.jumbotronContainer}>
 			<Row>
@@ -18,7 +21,7 @@ const Jumbotron = () => {
 					friends, join communities, and access exclusive experiences.
 				</Title>
 			</Row>
-			<Row style={{ marginTop: '80px' }}>
+			<Row style={{ marginTop: width > 800 ? '80px' : '33px' }}>
 				<Text id={styles.smallText}>
 					3500+ paying members across industries, experience levels, cities.
 					join the revolution!

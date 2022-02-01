@@ -34,17 +34,21 @@
 	padding-bottom: 7.1rem;
 }
 
-@media screen and (max-width: 760px) {
-	.mainSectionWrapper,
+@media screen and (max-width: 800px) {
 	.endSectionContainer,
 	.adVideosContainer,
 	.sneakPeakWrapper,
 	.testimonialsContainer,
 	.membersCompaniesWrapper {
-		padding: 1rem;
+		padding: 2rem 1rem;
 	}
 	.mainSectionWrapper {
+		padding: 1rem;
 		justify-content: center;
+	}
+
+	.endSectionContainer {
+		padding-bottom: 5rem;
 	}
 }
 

@@ -1,0 +1,47 @@
+.container {
+	position: relative;
+}
+
+.jobBox {
+	border: 2px solid #f9472a;
+	box-sizing: border-box;
+	border-radius: 100px;
+	padding: 1rem;
+	cursor: pointer;
+	margin-bottom: 22px;
+}
+
+.jobBox:hover {
+	background: radial-gradient(
+		100% 1267.36% at 0% 50%,
+		#f42b4d 0%,
+		#fa541a 100%
+	);
+	color: #fff !important;
+}
+
+#heading {
+	font-weight: 600;
+	font-size: 1.12rem;
+	line-height: 1.31rem;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.jobDescriptionContainer {
+	position: absolute;
+	background-color: #e5e5e5;
+	width: 100vw;
+	bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		width: 100%;
+		text-align: center;
+	}
+	#heading {
+		display: block;
+	}
+}

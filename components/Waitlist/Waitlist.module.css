@@ -51,10 +51,10 @@
 	width: 80%;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
 	.waitlistContainer {
 		margin-top: 1rem;
-		padding: 0 23px;
+		padding: 0;
 		padding-top: 1rem;
 	}
 	.inputLabel {

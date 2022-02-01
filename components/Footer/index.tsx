@@ -1,16 +1,23 @@
 import { Col, Row, Typography } from 'antd'
 import Image from 'next/image'
+import { useMediaQuery } from 'utils/useMediaQueries'
 const { Text } = Typography
 
 import styles from './Footer.module.css'
 
 const Footer = () => {
+	const [width] = useMediaQuery()
 	return (
 		<div className={styles.footerContainer}>
 			<Row justify='space-between'>
 				<Col xs={24} md={11}>
 					<div className={styles.companyDetailsWrapper}>
-						<div style={{ width: '5vw', maxWidth: '150px' }}>
+						<div
+							style={{
+								width: width > 800 ? '5vw' : '50px',
+								maxWidth: '150px',
+							}}
+						>
 							<Image
 								src='/assets/images/footer-logo.jpg'
 								alt='Leap club logo'

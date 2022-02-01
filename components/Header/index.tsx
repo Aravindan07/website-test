@@ -2,10 +2,14 @@ import { Row, Col, Button } from 'antd'
 import { MenuOutlined } from '@ant-design/icons'
 // import Link from 'next/link'
 import Image from 'next/image'
-
 import styles from './Header.module.css'
 import Link from 'next/link'
-const Header = () => {
+
+type HeaderPropsType = {
+	sideDrawerHandler: () => void
+}
+
+const Header = ({ sideDrawerHandler }: HeaderPropsType) => {
 	return (
 		<Row className={styles.headerDiv} justify='space-between' align='middle'>
 			<Col flex='none'>
@@ -56,7 +60,11 @@ const Header = () => {
 			</Col>
 			<Col xs={12} md={0}>
 				<div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-					<Button icon={<MenuOutlined />} size='large' />
+					<Button
+						icon={<MenuOutlined />}
+						size='large'
+						onClick={sideDrawerHandler}
+					/>
 				</div>
 			</Col>
 		</Row>
