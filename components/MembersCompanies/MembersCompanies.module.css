@@ -25,9 +25,13 @@
 	align-items: center;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
 	#headingText {
 		font-size: 18px;
+	}
+
+	.companyCard {
+		justify-content: center;
 	}
 }
 
