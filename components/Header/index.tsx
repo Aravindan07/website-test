@@ -13,12 +13,14 @@ const Header = ({ sideDrawerHandler }: HeaderPropsType) => {
 	return (
 		<Row className={styles.headerDiv} justify='space-between' align='middle'>
 			<Col flex='none'>
-				<Image
-					src='/assets/images/leap-club-logo.png'
-					alt='leap club logo'
-					width={70}
-					height={70}
-				/>
+				<Link href='/' passHref>
+					<Image
+						src='/assets/images/leap-club-logo.png'
+						alt='leap club logo'
+						width={70}
+						height={70}
+					/>
+				</Link>
 			</Col>
 			<Col flex='auto'></Col>
 

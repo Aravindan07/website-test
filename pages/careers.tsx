@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Carousel, Col, Row, Typography } from 'antd'
 import Card from 'components/Card'
-import JobBox from 'components/JobBox'
 import TestimonialsCarousel from 'components/TestimonialsCarousel'
 import VideoCard from 'components/VideoCard'
 import type { NextPage } from 'next'
@@ -11,18 +10,19 @@ import Gallery from 'react-grid-gallery'
 import { emails, investors } from 'constants/constants'
 import Image from 'next/image'
 import TeamGallery from 'components/TeamGallery'
-import { useState } from 'react'
+// import { useState } from 'react'
 import { useMediaQuery } from 'utils/useMediaQueries'
+import Jobs from 'components/Jobs'
 
 const { Title, Text } = Typography
 
 const Careers: NextPage = () => {
-	const [isOpen, setIsOpen] = useState('')
+	// const [isOpen, setIsOpen] = useState('')
 	const [width] = useMediaQuery()
 
-	const onJobBoxClick = (job: string) => {
-		setIsOpen(job)
-	}
+	// const onJobBoxClick = (job: string) => {
+	// 	setIsOpen(job)
+	// }
 
 	return (
 		<div>
@@ -164,10 +164,7 @@ const Careers: NextPage = () => {
 					</Col>
 				</Row>
 
-				<Row
-					justify='space-between'
-					style={{ backgroundColor: '#e5e5e5', padding: '0.5rem' }}
-				>
+				<Row justify='space-between' style={{ padding: '0.5rem' }}>
 					<Col xs={24} md={6}>
 						<VideoCard
 							link='https://youtube.com/embed/SihSIlXQFm4'
@@ -331,80 +328,140 @@ const Careers: NextPage = () => {
 					</Col>
 				</Row>
 
-				<div className={styles.jobsContainer}>
-					<JobBox
-						heading='talent acquisition manager'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('talent acquisition manager')}
-					/>
-					<JobBox
-						heading='graphic designer'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('graphic designer')}
-					/>
-					<JobBox
-						heading='manager, content and communication'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('manager, content and communication')}
-					/>
-					<JobBox
-						heading='vp, product'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('vp, product')}
-					/>
-					<JobBox
-						heading='associate - human capital'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('associate - human capital')}
-					/>
-					<JobBox
-						heading='react native app developer'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('react native app developer')}
-					/>
-					<JobBox
-						heading='senior backend developer'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('senior backend developer')}
-					/>
-					<JobBox
-						heading='data analyst'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('data analyst')}
-					/>
-					<JobBox
-						heading='business development intern'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('business development intern')}
-					/>
-					<JobBox
-						heading='member onboarding manager'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('')}
-					/>
-					<JobBox
-						heading='manager, performance marketing'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('manager, performance marketing')}
-					/>
-					<JobBox
-						heading='vp, marketing and branding'
-						description='lorem ipsum'
-						isOpen={isOpen}
-						onClick={() => onJobBoxClick('vp, marketing and branding')}
-					/>
-				</div>
+				{/* // <div key={job.id} className={styles.jobsContainer}> */}
+				<Jobs />
+
+				{/* <>
+					 	<Row>
+					 		<Col xs={24} md={6}>
+					 			<JobBox
+									heading={job.job}
+									description={job.description}
+									isOpen={isOpen}
+									onClick={() => onJobBoxClick('talent acquisition manager')}
+								/>
+							</Col>
+							<Row>
+								<Col xs={24}>
+									<div
+										style={{
+											backgroundColor: 'red',
+											width: '100%',
+											height: '200px',
+										}}
+									></div>
+								</Col>
+							</Row>
+						</Row>
+					</> */}
+
+				{/* <Row justify='space-between'>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='talent acquisition manager'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('talent acquisition manager')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='graphic designer'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('graphic designer')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='manager, content and communication'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() =>
+									onJobBoxClick('manager, content and communication')
+								}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='vp, product'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('vp, product')}
+							/>
+						</Col>
+					</Row>
+
+					<Row justify='space-between'>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='associate - human capital'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('associate - human capital')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='react native app developer'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('react native app developer')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='senior backend developer'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('senior backend developer')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='data analyst'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('data analyst')}
+							/>
+						</Col>
+					</Row>
+
+					<Row justify='space-between'>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='business development intern'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('business development intern')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='member onboarding manager'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='manager, performance marketing'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('manager, performance marketing')}
+							/>
+						</Col>
+						<Col xs={24} md={5}>
+							<JobBox
+								heading='vp, marketing and branding'
+								description='lorem ipsum'
+								isOpen={isOpen}
+								onClick={() => onJobBoxClick('vp, marketing and branding')}
+							/>
+						</Col>
+					</Row> */}
+
 				<div style={{ marginTop: width > 800 ? '5.5rem' : '2rem' }}>
 					<Text>
 						can’t find an open position of your interest? write to us and if we

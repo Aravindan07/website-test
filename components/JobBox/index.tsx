@@ -11,7 +11,7 @@ type JobBoxPropsType = {
 
 const { Text } = Typography
 
-function JobBox({ heading, description, isOpen, onClick }: JobBoxPropsType) {
+function JobBox({ heading, onClick }: JobBoxPropsType) {
 	return (
 		<div
 			style={{ display: 'flex', flexDirection: 'column' }}
@@ -20,11 +20,11 @@ function JobBox({ heading, description, isOpen, onClick }: JobBoxPropsType) {
 			<div className={styles.jobBox} onClick={onClick}>
 				<Text id={styles.heading}>{heading}</Text>
 			</div>
-			{isOpen === heading && (
-				// <div className={styles.jobDescriptionContainer}>
-				<Text>{description}</Text>
-				// </div>
-			)}
+			{/* {isOpen === heading && (
+				<div className={styles.jobDescriptionContainer}>
+					<Text>{description}</Text>
+				</div>
+			)} */}
 		</div>
 	)
 }

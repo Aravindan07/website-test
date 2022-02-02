@@ -319,3 +319,76 @@ export const investors = [
 		description: 'founder at saha fund',
 	},
 ]
+
+export const jobs = [
+	{
+		job: 'graphic designer',
+		description:
+			'this is for you if you have a passion to translate ideas into innovative designs. you establish, evolve and execute all our designs and social media campaigns. 4-6 years prior experience in social media content creation (gifs, short/ long form video editing, animation) is a must along with an in-depth knowledge of photoshop/ illustrator/ premier pro++.',
+	},
+	{
+		job: 'manager, content and communication',
+		description:
+			"you'll be entrusted with the (very important) responsibility of being leap's voice (!) in addition to ensuring the right positioning and communication of the product. this means bringing your creative a-game to writing copy across the board and working closely with our community & business teams; and owning the communication calendar & engagement roadmap for members." +
+			'you are data oriented, believe that everything can be measured, and have a good understanding of funnels, sprint & agile ways of working. 4-6 years of content writing experience is a big plus. if you spot an error on the above copy - extra brownie points!',
+	},
+	{
+		job: 'talent acquisition manager',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 4,
+		job: 'vp, product',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 5,
+		job: 'associate - human capital',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 6,
+		job: 'react native app developer',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 7,
+		job: 'senior backend developer',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 8,
+		job: 'data analyst',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 9,
+		job: 'business development intern',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 10,
+		job: 'member onboarding manager',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 11,
+		job: 'manager, performance marketing',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+	{
+		id: 12,
+		job: 'vp, marketing and branding',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ex aliquid quas id ratione ullam assumenda repellendus molestiae. Laborum fuga velit, qui officia nemo ea voluptates ullam dolores perspiciatis dicta.',
+	},
+]

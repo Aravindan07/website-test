@@ -1,0 +1,36 @@
+.panelContainer {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+.jobsPanel {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+#sendmailButton {
+	margin-top: 1rem;
+	background: radial-gradient(
+		100% 1267.36% at 0% 50%,
+		#f42b4d 0%,
+		#fa541a 100%
+	);
+	color: #fff;
+	border-radius: 5px;
+	border: 0;
+}
+
+@media screen and (max-width: 800px) {
+	.jobsContainer {
+		justify-content: center;
+	}
+	.jobsPanel {
+		padding: 0;
+	}
+
+	.panelContainer {
+		font-size: 1rem;
+		margin: 1rem 0;
+	}
+}

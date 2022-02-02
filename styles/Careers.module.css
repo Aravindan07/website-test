@@ -60,7 +60,8 @@
 
 .jobsContainer {
 	display: flex;
-	justify-content: space-between;
+	/* flex-direction: column; */
+	/* justify-content: space-between; */
 	flex-wrap: wrap;
 }
 
@@ -131,8 +132,11 @@
 	padding: 5rem 7.3rem;
 }
 
+#sendmailButton:hover {
+	color: #fff;
+}
+
 @media screen and (max-width: 800px) {
-	.titleWrapper,
 	.companyPitch,
 	.teamMembersWrapper,
 	.teamMembersVideosWrapper,
@@ -145,6 +149,22 @@
 	.featuredOnWrapper {
 		padding: 2.5rem 1rem;
 		/* padding-right: 1rem; */
+	}
+
+	.titleWrapper {
+		padding: 2.5rem 1rem 0 1rem;
+		/* padding-bottom: 0; */
+	}
+
+	.companyPitch {
+		/* padding: 1rem 1rem 2.5rem 1; */
+		padding-top: 1rem;
+	}
+
+	#companyPitchText {
+		font-size: 1rem;
+		line-height: 1.3rem;
+		margin-bottom: 1rem;
 	}
 
 	.teamImageStyle {
@@ -163,12 +183,6 @@
 		line-height: 1.625rem;
 	}
 
-	#companyPitchText {
-		font-size: 1rem;
-		line-height: 1.1rem;
-		margin-bottom: 1rem;
-	}
-
 	#foundingMembersSectionHeading {
 		font-size: 1.375rem;
 		line-height: 1.625rem;
@@ -177,9 +191,5 @@
 	#jobsSectionHeading {
 		font-size: 1.375rem;
 		line-height: 1.625rem;
-	}
-
-	.jobsContainer {
-		justify-content: center;
 	}
 }

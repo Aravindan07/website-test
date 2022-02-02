@@ -9,6 +9,9 @@
 	padding: 1rem;
 	cursor: pointer;
 	margin-bottom: 22px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .jobBox:hover {

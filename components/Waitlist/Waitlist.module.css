@@ -3,23 +3,23 @@
 	border-radius: 17px;
 	min-height: 560px;
 	margin-top: 1rem;
-	padding: 2.75rem 2.93rem;
+	padding: 2rem 2.93rem;
 }
 
 .input {
 	border: 1px solid #c4c4c4;
 	border-radius: 5px;
 	font-family: 'Work Sans';
-	padding: 12px 18px;
+	padding: 0.75rem 1.125rem;
 	font-size: 1rem;
-	line-height: 19px;
+	line-height: 1.18rem;
 }
 
 .inputLabel {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 19px;
-	margin-bottom: 55px;
+	margin-bottom: 1.5rem;
 }
 
 .spanText {
@@ -63,6 +63,7 @@
 	}
 	.input {
 		font-size: 0.8rem;
+		width: 90%;
 	}
 }
 

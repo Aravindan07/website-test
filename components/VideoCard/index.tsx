@@ -13,7 +13,7 @@ function VideoCard({ link, text }: VideoCardPropsType) {
 	return (
 		<div className={styles.videoCardContainer}>
 			<iframe src={link} frameBorder='1' width='100%'></iframe>
-			<div style={{ backgroundColor: '#e5e5e5' }}>
+			<div>
 				<Text>{text}</Text>
 			</div>
 		</div>
