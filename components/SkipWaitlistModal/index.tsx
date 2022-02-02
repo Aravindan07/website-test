@@ -32,7 +32,7 @@ function SkipWaitlistModal() {
 			setConfirmLoading(true)
 			const data = await dispatch(
 				skipWaitlist({
-					id: waitlist.skipWaitlistModal.data?.payload.id!,
+					id: waitlist.skipWaitlistModal.data.payload.id!,
 					name: referralName,
 				})
 			)

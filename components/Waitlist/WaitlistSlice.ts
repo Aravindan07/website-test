@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import { Action, createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { joinWaitlistApi, skipWaitlistApi } from './WaitlistAPI'
 
 // type ReturnDatatype = {
@@ -66,12 +66,33 @@ const initialState = {
 	message: null,
 	skipWaitlistModal: {
 		isOpen: false,
-		data: null,
+		data: {
+			payload: {
+				id: '',
+				email: '',
+				phoneNumber: '',
+				linkedinUrl: '',
+			},
+		},
 	},
 	congratsModal: {
 		isOpen: false,
-		data: null,
+		data: {
+			referralName: '',
+			payload: {
+				payload: {
+					id: '',
+					email: '',
+					phoneNumber: '',
+					linkedinUrl: '',
+				},
+			},
+		},
 	},
+}
+
+export interface ActionWithPayload<T> extends Action {
+	payload: T
 }
 
 export const userSlice = createSlice({
@@ -86,7 +107,7 @@ export const userSlice = createSlice({
 				data: action.payload,
 			}
 		},
-		openCongratsModal: (state, action) => {
+		openCongratsModal: (state, action: any) => {
 			state.status = 'success'
 			state.skipWaitlistModal = {
 				...state.skipWaitlistModal,
@@ -103,12 +124,29 @@ export const userSlice = createSlice({
 			state.skipWaitlistModal = {
 				...state.skipWaitlistModal,
 				isOpen: false,
-				data: null,
+				data: {
+					payload: {
+						id: '',
+						email: '',
+						phoneNumber: '',
+						linkedinUrl: '',
+					},
+				},
 			}
 			state.congratsModal = {
 				...state.congratsModal,
 				isOpen: false,
-				data: null,
+				data: {
+					referralName: '',
+					payload: {
+						payload: {
+							id: '',
+							email: '',
+							phoneNumber: '',
+							linkedinUrl: '',
+						},
+					},
+				},
 			}
 		},
 	},
