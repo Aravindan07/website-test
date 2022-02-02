@@ -4,12 +4,12 @@ import { MenuOutlined } from '@ant-design/icons'
 import Image from 'next/image'
 import styles from './Header.module.css'
 import Link from 'next/link'
+import { useAppDispatch } from 'app/hooks'
+import { toggleSidebar } from 'components/Layout/LayoutSlice'
 
-type HeaderPropsType = {
-	sideDrawerHandler: () => void
-}
+const Header = () => {
+	const dispatch = useAppDispatch()
 
-const Header = ({ sideDrawerHandler }: HeaderPropsType) => {
 	return (
 		<Row className={styles.headerDiv} justify='space-between' align='middle'>
 			<Col flex='none'>
@@ -65,7 +65,7 @@ const Header = ({ sideDrawerHandler }: HeaderPropsType) => {
 					<Button
 						icon={<MenuOutlined />}
 						size='large'
-						onClick={sideDrawerHandler}
+						onClick={() => dispatch(toggleSidebar())}
 					/>
 				</div>
 			</Col>

@@ -8,3 +8,12 @@
 		margin: 1rem 0.5rem;
 	}
 }
+
+@media screen and (min-width: 2500px) {
+	.videoCardContainer {
+		min-height: 400px;
+	}
+	#subText {
+		font-size: 2rem;
+	}
+}

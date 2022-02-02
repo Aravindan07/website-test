@@ -118,17 +118,53 @@
 		padding-left: 50rem;
 		padding-right: 50rem;
 	}
-	#pointsDesc {
-		font-size: 1.87rem;
-		line-height: 2.1rem;
+
+	#headingText {
+		font-size: 4.5rem;
+		line-height: 5.68rem;
 	}
+
+	.image {
+		width: 60%;
+		height: 60%;
+	}
+
+	#whyExistDescription {
+		color: #333333;
+		font-size: 3.5rem;
+		line-height: 3.8rem;
+	}
+
+	#genderGraphText {
+		font-size: 4.5rem;
+		line-height: 5.06rem;
+	}
+
+	#genderGraphSubtext {
+		font-size: 3.56rem;
+		line-height: 3.8rem;
+	}
+
+	#pointHeading {
+		font-size: 3.87rem;
+		line-height: 4.18rem;
+		margin-bottom: 22px;
+	}
+
+	#pointsDesc {
+		font-size: 2.87rem;
+		line-height: 3.1rem;
+	}
+
 	#currentOpeningsText {
-		font-size: 2.5rem;
-		line-height: 2.9rem;
+		font-size: 3rem;
+		line-height: 3.9rem;
 	}
 	#currentOpeningsButton {
-		font-size: 1.5rem;
-		line-height: 1.75rem;
+		font-size: 2rem;
+		line-height: 2.75rem;
+		height: auto;
+		margin-top: 8rem;
 	}
 }
 

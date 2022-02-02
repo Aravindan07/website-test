@@ -198,7 +198,10 @@ const Careers: NextPage = () => {
 					<Col xs={24}>
 						<Title
 							id={styles.foundingMembersSectionHeading}
-							style={{ textAlign: 'center' }}
+							style={{
+								textAlign: 'center',
+								marginBottom: width > 2500 ? '8rem' : 0,
+							}}
 						>
 							📝 our values and guiding principles
 						</Title>
@@ -258,7 +261,10 @@ const Careers: NextPage = () => {
 					<Col xs={24}>
 						<Title
 							id={styles.foundingMembersSectionHeading}
-							style={{ textAlign: 'center' }}
+							style={{
+								textAlign: 'center',
+								marginBottom: width > 2500 ? '8rem' : 0,
+							}}
 						>
 							🎉 perks of working at leap.club
 						</Title>
@@ -328,142 +334,11 @@ const Careers: NextPage = () => {
 					</Col>
 				</Row>
 
-				{/* // <div key={job.id} className={styles.jobsContainer}> */}
+				{/* Add/remove jobs from the below component */}
 				<Jobs />
 
-				{/* <>
-					 	<Row>
-					 		<Col xs={24} md={6}>
-					 			<JobBox
-									heading={job.job}
-									description={job.description}
-									isOpen={isOpen}
-									onClick={() => onJobBoxClick('talent acquisition manager')}
-								/>
-							</Col>
-							<Row>
-								<Col xs={24}>
-									<div
-										style={{
-											backgroundColor: 'red',
-											width: '100%',
-											height: '200px',
-										}}
-									></div>
-								</Col>
-							</Row>
-						</Row>
-					</> */}
-
-				{/* <Row justify='space-between'>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='talent acquisition manager'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('talent acquisition manager')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='graphic designer'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('graphic designer')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='manager, content and communication'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() =>
-									onJobBoxClick('manager, content and communication')
-								}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='vp, product'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('vp, product')}
-							/>
-						</Col>
-					</Row>
-
-					<Row justify='space-between'>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='associate - human capital'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('associate - human capital')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='react native app developer'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('react native app developer')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='senior backend developer'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('senior backend developer')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='data analyst'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('data analyst')}
-							/>
-						</Col>
-					</Row>
-
-					<Row justify='space-between'>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='business development intern'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('business development intern')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='member onboarding manager'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='manager, performance marketing'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('manager, performance marketing')}
-							/>
-						</Col>
-						<Col xs={24} md={5}>
-							<JobBox
-								heading='vp, marketing and branding'
-								description='lorem ipsum'
-								isOpen={isOpen}
-								onClick={() => onJobBoxClick('vp, marketing and branding')}
-							/>
-						</Col>
-					</Row> */}
-
 				<div style={{ marginTop: width > 800 ? '5.5rem' : '2rem' }}>
-					<Text>
+					<Text id={styles.noJobsMatchText}>
 						can’t find an open position of your interest? write to us and if we
 						like each other, we will find a role for you.
 					</Text>
@@ -487,7 +362,7 @@ const Careers: NextPage = () => {
 					<Col xs={24} md={7}>
 						<iframe
 							width='100%'
-							height='200'
+							height={width > 2500 ? '400' : '200'}
 							src='https://youtube.com/embed/Gtq-YL7fIVM'
 							title='Youtube Videos'
 							frameBorder='0'
@@ -496,7 +371,7 @@ const Careers: NextPage = () => {
 					<Col xs={24} md={7}>
 						<iframe
 							width='100%'
-							height='200'
+							height={width > 2500 ? '400' : '200'}
 							src='https://youtube.com/embed/lXifOZ9dKgM'
 							title='Youtube Videos'
 							frameBorder='0'
@@ -505,7 +380,7 @@ const Careers: NextPage = () => {
 					<Col xs={24} md={7}>
 						<iframe
 							width='100%'
-							height='200'
+							height={width > 2500 ? '400' : '200'}
 							src='https://youtube.com/embed/4icp1Bph8YU'
 							title='Youtube Videos'
 							frameBorder='0'
@@ -543,7 +418,15 @@ const Careers: NextPage = () => {
 								))}
 							</Carousel>
 						) : (
-							<Gallery rowHeight={225} images={emails} />
+							<div
+								style={{
+									// display: 'block',
+									width: width > 2500 ? '2000px' : '100%',
+									margin: '0 auto',
+								}}
+							>
+								<Gallery rowHeight={width > 2500 ? 400 : 225} images={emails} />
+							</div>
 						)}
 					</Col>
 				</Row>
@@ -637,7 +520,7 @@ const Careers: NextPage = () => {
 							<Image
 								src='/assets/images/firstcheque.png'
 								alt='companies logo'
-								width='150'
+								width={width > 2500 ? '350' : '150'}
 								height='100%'
 								// layout='fill'
 								objectFit='contain'
@@ -649,7 +532,7 @@ const Careers: NextPage = () => {
 							<Image
 								src='/assets/images/whiteboard_capital.png'
 								alt='companies logo'
-								width='150'
+								width={width > 2500 ? '350' : '150'}
 								height='100%'
 								// layout='fill'
 								objectFit='contain'
@@ -661,7 +544,7 @@ const Careers: NextPage = () => {
 							<Image
 								src='/assets/images/enzia.png'
 								alt='companies logo'
-								width='150'
+								width={width > 2500 ? '350' : '150'}
 								height='100%'
 								// layout='fill'
 								objectFit='contain'
@@ -673,7 +556,7 @@ const Careers: NextPage = () => {
 							<Image
 								src='/assets/images/artha_ventures.png'
 								alt='companies logo'
-								width='150'
+								width={width > 2500 ? '350' : '150'}
 								height='100%'
 								// layout='fill'
 								objectFit='contain'
@@ -685,7 +568,7 @@ const Careers: NextPage = () => {
 							<Image
 								src='/assets/images/titan_capital.png'
 								alt='companies logo'
-								width='150'
+								width={width > 2500 ? '350' : '150'}
 								height='100%'
 								// layout='fill'
 								objectFit='contain'
@@ -727,8 +610,8 @@ const Careers: NextPage = () => {
 										<Image
 											src={investor.src}
 											alt='companies logo'
-											width='150'
-											height='200'
+											width={width > 2500 ? '350' : '150'}
+											height={width > 2500 ? '300' : '150'}
 											// layout='fill'
 											objectFit='contain'
 										/>

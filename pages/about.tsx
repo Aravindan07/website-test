@@ -247,6 +247,15 @@ function About() {
 							<span style={{ color: 'red' }}>jobs@leap.club</span> to explore
 							exciting opportunities.
 						</Title>
+						{width > 2500 && (
+							<Button
+								type='primary'
+								id={styles.currentOpeningsButton}
+								onClick={() => router.push('/careers')}
+							>
+								view current openings →
+							</Button>
+						)}
 					</Col>
 					<Col xs={24} md={12}>
 						<div className={styles.teamImage}>
@@ -261,17 +270,19 @@ function About() {
 						</div>
 					</Col>
 				</Row>
-				<Row>
-					<Col xs={24}>
-						<Button
-							type='primary'
-							id={styles.currentOpeningsButton}
-							onClick={() => router.push('/careers')}
-						>
-							view current openings →
-						</Button>
-					</Col>
-				</Row>
+				{width < 2500 && (
+					<Row>
+						<Col xs={24}>
+							<Button
+								type='primary'
+								id={styles.currentOpeningsButton}
+								onClick={() => router.push('/careers')}
+							>
+								view current openings →
+							</Button>
+						</Col>
+					</Row>
+				)}
 			</div>
 		</div>
 	)

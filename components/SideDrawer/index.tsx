@@ -1,18 +1,18 @@
 import { Drawer } from 'antd'
+import { useAppDispatch, useAppSelector } from 'app/hooks'
+import { sidebarOpen, toggleSidebar } from 'components/Layout/LayoutSlice'
 import Link from 'next/link'
 
-type PropsType = {
-	isOpen: boolean
-	sideDrawerHandler: () => void
-}
+const SideDrawer = () => {
+	const dispatch = useAppDispatch()
+	const isSidebarOpen = useAppSelector(sidebarOpen)
 
-const SideDrawer = ({ isOpen, sideDrawerHandler }: PropsType) => {
 	return (
 		<Drawer
 			title=''
 			placement='right'
-			onClose={sideDrawerHandler}
-			visible={isOpen}
+			onClose={() => dispatch(toggleSidebar())}
+			visible={isSidebarOpen}
 			width='60%'
 		>
 			<div
@@ -26,20 +26,38 @@ const SideDrawer = ({ isOpen, sideDrawerHandler }: PropsType) => {
 				}}
 			>
 				<Link href='/' passHref>
-					<div onClick={sideDrawerHandler}>home</div>
+					<div
+						onClick={() => dispatch(toggleSidebar())}
+						style={{ cursor: 'pointer' }}
+					>
+						home
+					</div>
 				</Link>
 				<Link href='/careers' passHref>
-					<div onClick={sideDrawerHandler}>we&apos;re hiring</div>
+					<div
+						onClick={() => dispatch(toggleSidebar())}
+						style={{ cursor: 'pointer' }}
+					>
+						we&apos;re hiring
+					</div>
 				</Link>
 				<Link href='/about' passHref>
-					<div onClick={sideDrawerHandler}>about us</div>
+					<div
+						onClick={() => dispatch(toggleSidebar())}
+						style={{ cursor: 'pointer' }}
+					>
+						about us
+					</div>
 				</Link>
 				<a
 					href='https://leap.substack.com/'
 					target='_blank'
 					rel='noreferrer noopener'
 				>
-					<div style={{ color: 'black' }} onClick={sideDrawerHandler}>
+					<div
+						style={{ color: 'black' }}
+						onClick={() => dispatch(toggleSidebar())}
+					>
 						blog
 					</div>
 				</a>
@@ -48,7 +66,10 @@ const SideDrawer = ({ isOpen, sideDrawerHandler }: PropsType) => {
 					target='_blank'
 					rel='noreferrer noopener'
 				>
-					<div style={{ color: 'black' }} onClick={sideDrawerHandler}>
+					<div
+						style={{ color: 'black' }}
+						onClick={() => dispatch(toggleSidebar())}
+					>
 						testimonials 🙋‍♀️
 					</div>
 				</a>

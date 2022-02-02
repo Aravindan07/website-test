@@ -37,12 +37,12 @@
 
 @media screen and (min-width: 2500px) {
 	#headingText {
-		font-size: 2.5rem;
-		padding-top: 2rem;
+		font-size: 2.9rem;
+		padding-top: 2.5rem;
 	}
 	.companyCard {
 		justify-content: flex-start;
-		min-height: 150px;
+		min-height: 250px;
 	}
 	.companyCard img {
 		width: 100%;

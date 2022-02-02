@@ -47,12 +47,12 @@
 		padding: 5rem 50rem 1.5rem 50rem;
 	}
 	.socialHandles {
-		justify-content: flex-start;
+		justify-content: flex-end;
 		margin: 1rem 1rem 1rem 0;
 	}
-	/* .companyDetailsWrapperRight {
+	.companyDetailsWrapperRight {
 		align-items: flex-end;
-	} */
+	}
 }
 
 @media screen and (min-width: 4000px) {

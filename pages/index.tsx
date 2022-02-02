@@ -1,8 +1,10 @@
 import { Col, Row } from 'antd'
 import AdVideos from 'components/AdVideos'
+import CongratsModal from 'components/CongratsModal'
 import EndSection from 'components/EndSection'
 import Jumbotron from 'components/Jumbotron'
 import MembersCompanies from 'components/MembersCompanies'
+import SkipWaitlistModal from 'components/SkipWaitlistModal'
 import SneakPeak from 'components/SneakPeak'
 import Testimonials from 'components/Testimonials'
 import Waitlist from 'components/Waitlist'
@@ -72,6 +74,11 @@ const Home: NextPage = () => {
 				/>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 			</Head>
+
+			{/* Loading Modals */}
+			<SkipWaitlistModal />
+			<CongratsModal />
+			{/*End of Loading Modals */}
 
 			<Row className={styles.mainSectionWrapper}>
 				<Col xs={24} md={12} xxl={9}>

@@ -10,12 +10,6 @@ type StatsBoxPropsType = {
 
 function StatsBox({ topText, bottomText, topBackground }: StatsBoxPropsType) {
 	return (
-		// <div className={styles.statsBoxContainer}>
-		// 	<div style={{ background: topBackground }} className={styles.statsBoxTop}>
-		// 		{topText}
-		// 	</div>
-		// 	<div className={styles.statsBoxBottom}>{bottomText}</div>
-		// </div>
 		<>
 			<Row>
 				<Col xs={24}>

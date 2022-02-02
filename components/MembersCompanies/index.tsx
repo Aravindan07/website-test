@@ -27,24 +27,18 @@ function MembersCompanies() {
 						justify='space-between'
 						style={{ width: '100%' }}
 					>
-						{membersCompaniesImages.map((company: any, index) => (
+						{membersCompaniesImages.map((company: any) => (
 							<Col key={company.id} className='gutter-row' span={4}>
 								<div
 									className={styles.companyCard}
 									style={{
-										justifyContent:
-											index === 5 ||
-											index === 11 ||
-											index === 17 ||
-											index === 23
-												? 'flex-end'
-												: 'flex-start',
+										justifyContent: 'flex-start',
 									}}
 								>
 									<Image
 										src={company.img}
 										alt='companies logo'
-										width='100'
+										width={width > 2500 ? '200' : '100'}
 										height='100'
 										// layout='fill'
 										objectFit='contain'

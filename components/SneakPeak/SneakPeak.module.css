@@ -22,8 +22,12 @@
 
 @media screen and (min-width: 2500px) {
 	.videoContainer {
-		height: 450px;
-		width: 60%;
+		height: 500px;
+		width: 70%;
 		margin: 5rem 0;
+	}
+	#sneakPeakText {
+		font-size: 3.5rem;
+		line-height: 3.93rem;
 	}
 }

@@ -38,3 +38,28 @@
 		margin-bottom: 3rem;
 	}
 }
+
+@media screen and (min-width: 2500px) {
+	.cardImage {
+		min-width: 150px;
+		max-width: 150px;
+		max-height: 150px;
+		height: 150px;
+		width: 150px;
+		margin-right: 1.25rem;
+		position: relative;
+	}
+	#cardHeading {
+		font-size: 3.25rem;
+		line-height: 3.43rem;
+		margin-bottom: 2.62rem;
+	}
+
+	#cardDescription {
+		font-size: 3rem;
+		line-height: 3.18rem;
+	}
+	.cardContainer {
+		margin-bottom: 5rem;
+	}
+}

@@ -14,7 +14,7 @@ function Jobs() {
 				key={'1'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						this is for you if you have a passion to translate ideas into
 						innovative designs. you establish, evolve and execute all our
 						designs and social media campaigns. 4-6 years prior experience in
@@ -27,7 +27,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -39,7 +39,7 @@ function Jobs() {
 				key={'2'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						you&apos;ll be entrusted with the (very important) responsibility of
 						being leap&apos;s voice (!) in addition to ensuring the right
 						positioning and communication of the product. this means bringing
@@ -57,7 +57,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -69,7 +69,7 @@ function Jobs() {
 				key={'3'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						this is for you if you have an eye for detail, great with data and
 						willingness to get your hands dirty in building our mission. you
 						play a pivotal role in supporting the ops for our engagement
@@ -82,7 +82,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -94,7 +94,7 @@ function Jobs() {
 				key={'4'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						you will be responsible for end to end lateral, campus and
 						leadership hiring process at leap. you will ideate and execute our
 						hiring strategies and closely work with multiple stakeholders
@@ -107,7 +107,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -119,7 +119,7 @@ function Jobs() {
 				key={'5'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						you lead our human p&l and drive a high performance culture. we are
 						35 in the team today and will be ~80 in this year. you will lead
 						employee nps, growth opportunities for the team, recruitment
@@ -134,7 +134,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -146,7 +146,7 @@ function Jobs() {
 				key={'6'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						you own the front end development and maintenance of our mobile
 						apps. you work closely with our product and backend engineering
 						teams and continuously improve the performance on both code and
@@ -159,7 +159,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -171,7 +171,7 @@ function Jobs() {
 				key={'7'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						you will work on a disruptive product that’s in its early stages and
 						will be responsible to drive innovation. you&apos;re someone with
 						experience in building products that have significant user
@@ -187,7 +187,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -199,7 +199,7 @@ function Jobs() {
 				key={'8'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						this role is for you if you love (and ace at) building relationships
 						and driving success metrics. you are the face of leap and are
 						responsible for leading a smooth post onboarding experience for our
@@ -213,7 +213,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -225,7 +225,7 @@ function Jobs() {
 				key={'9'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						this is for you if you have an eye for detail and are willing to
 						invest the time in building our mission. you would help us identify
 						and reach out to women who are the right fit for the leap.club
@@ -237,7 +237,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -249,7 +249,7 @@ function Jobs() {
 				key={'10'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						this role is for you if you breathe data and have exceptional
 						analytical, problem solving, and research skills. you will be
 						working with the marketing and community team to lead day to day
@@ -263,7 +263,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -275,7 +275,7 @@ function Jobs() {
 				key={'11'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						you are responsible for onboarding new members and comfortable with
 						owning targets. the ideal candidate will have 3-5 years of sales
 						experience in a fast-growing startup. female candidates preferred
@@ -286,7 +286,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>
@@ -298,7 +298,7 @@ function Jobs() {
 				key={'12'}
 			>
 				<div className={styles.jobsPanel}>
-					<Text style={{ fontSize: '1rem' }}>
+					<Text id={styles.jobDescription}>
 						our 0-1 journey is done (🤞) and we are now ready to scale. you will
 						lead this product-led journey for us - including our product
 						strategy, vision and roadmap, and obsess about building the best
@@ -313,7 +313,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send an mail
+							Send a mail
 						</Button>
 					</div>
 				</div>

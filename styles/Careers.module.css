@@ -103,8 +103,8 @@
 
 #investorName {
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 23px;
+	font-size: 1.25rem;
+	line-height: 1.43rem;
 	text-align: center;
 	color: #000000;
 	margin: 1rem 0;
@@ -112,19 +112,19 @@
 
 #investorDescription {
 	font-weight: normal;
-	font-size: 20px;
-	line-height: 23px;
+	font-size: 1.25rem;
+	line-height: 1.43rem;
 	text-align: center;
 	color: #000000;
 }
 
 #andMoreText {
 	font-weight: normal;
-	font-size: 25px;
-	line-height: 29px;
+	font-size: 1.56rem;
+	line-height: 1.81rem;
 	text-align: center;
 	color: #f9472a;
-	margin-top: 44px;
+	margin-top: 2.75rem;
 }
 
 .featuredOnWrapper {
@@ -191,5 +191,69 @@
 	#jobsSectionHeading {
 		font-size: 1.375rem;
 		line-height: 1.625rem;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	.titleWrapper,
+	.companyPitch,
+	.teamMembersWrapper,
+	.teamMembersVideosWrapper,
+	.perksSectionWrapper,
+	.jobsSectionWrapper,
+	.sampleJobVideosWrapper,
+	.emailsSectionWrapper,
+	.teamMembersPhotosWrapper,
+	.backedBySectionWrapper,
+	.featuredOnWrapper {
+		padding-right: 50rem;
+		padding-left: 50rem;
+	}
+	#titleText {
+		font-weight: 600;
+		font-size: 4.1rem;
+		line-height: 4.5rem;
+	}
+
+	#companyPitchText {
+		font-size: 3.56rem;
+		line-height: 3.81rem;
+	}
+
+	#foundingMembersSectionHeading {
+		font-size: 4.1rem;
+		line-height: 4.5rem;
+	}
+
+	#jobsSectionHeading {
+		font-size: 3.8rem;
+		line-height: 4.1rem;
+		margin-bottom: 5.1rem;
+	}
+
+	#noJobsMatchText {
+		font-size: 2rem;
+	}
+
+	.teamImageStyle {
+		height: 100%;
+		object-fit: contain;
+	}
+
+	#investorName {
+		font-size: 2.25rem;
+		line-height: 2.43rem;
+		margin: 2rem 0;
+	}
+
+	#investorDescription {
+		font-size: 2.25rem;
+		line-height: 2.43rem;
+	}
+
+	#andMoreText {
+		font-size: 2.56rem;
+		line-height: 2.81rem;
+		margin-top: 3.75rem;
 	}
 }

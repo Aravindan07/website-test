@@ -1,14 +1,42 @@
 import { Button, Form, Input } from 'antd'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Waitlist.module.css'
+import { useAppDispatch, useAppSelector } from 'app/hooks'
+import { joinWaitlist, openSkipWaitlistModal } from './WaitlistSlice'
 
 function Waitlist() {
 	const [form] = Form.useForm()
+	const dispatch = useAppDispatch()
+	const state = useAppSelector((state) => state)
+	const [loading, setLoading] = useState(false)
 
-	const onFinish = (values: any) => {
-		console.log('Success:', values)
+	const validateEmail = (email: string) => {
+		const regex =
+			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+		return regex.test(email)
 	}
 
+	const onFinish = async (values: any) => {
+		console.log('Success:', values)
+		try {
+			setLoading(true)
+			const data = await dispatch(
+				joinWaitlist({
+					email: values.email,
+					linkedinUrl: values.linkedinProfileLink,
+					phoneNumber: values.phoneNumber,
+				})
+			)
+			console.log('data', data)
+			setLoading(false)
+			await dispatch(openSkipWaitlistModal({ payload: data.payload }))
+		} catch (error) {
+			console.error(error)
+			setLoading(false)
+		}
+	}
+
+	console.log('state', state)
 	const onFinishFailed = (errorInfo: any) => {
 		console.log('Failed:', errorInfo)
 	}
@@ -26,7 +54,23 @@ function Waitlist() {
 					className={styles.inputLabel}
 					label='email'
 					name='email'
-					rules={[{ required: true, message: 'Please enter your email' }]}
+					rules={[
+						{
+							required: true,
+							message: 'Please enter your email',
+						},
+						() => ({
+							validator(_, value) {
+								if (!value) {
+									return Promise.reject()
+								}
+								if (!validateEmail(value.toLowerCase())) {
+									return Promise.reject('Please enter a valid email')
+								}
+								return Promise.resolve()
+							},
+						}),
+					]}
 				>
 					<Input className={styles.input} placeholder='gal@gadot.com' />
 				</Form.Item>
@@ -57,12 +101,18 @@ function Waitlist() {
 					rules={[
 						{
 							required: true,
-							message: 'Please enter a valid phone number',
-							pattern: new RegExp(/^[0-9]+$/),
+							message: 'Please enter your phone number',
+							// pattern: new RegExp(/^[0-9]+$/),
 						},
 						() => ({
 							validator(_, value) {
-								if (value.length < 10 && value.length > 0) {
+								if (!value) {
+									return Promise.reject()
+								}
+								if (isNaN(value)) {
+									return Promise.reject('Please enter a valid phone number')
+								}
+								if (value.length < 10) {
 									return Promise.reject(
 										"phone number can't be less than 10 digits"
 									)
@@ -91,7 +141,12 @@ function Waitlist() {
 						alignItems: 'center',
 					}}
 				>
-					<Button type='primary' htmlType='submit' id={styles.buttonPrimary}>
+					<Button
+						type='primary'
+						htmlType='submit'
+						id={styles.buttonPrimary}
+						loading={loading}
+					>
 						explore the membership
 					</Button>
 				</Form.Item>
