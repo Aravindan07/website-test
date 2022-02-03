@@ -51,6 +51,22 @@
 	}
 }
 
+@media screen and (min-width: 1900px) {
+	.mainSectionWrapper,
+	.endSectionContainer,
+	.adVideosContainer,
+	.sneakPeakWrapper,
+	.testimonialsContainer,
+	.membersCompaniesWrapper {
+		padding-left: 25rem;
+		padding-right: 25rem;
+	}
+	.mainSectionWrapper {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+
 @media screen and (min-width: 2500px) {
 	.mainSectionWrapper,
 	.endSectionContainer,
@@ -58,10 +74,22 @@
 	.sneakPeakWrapper,
 	.testimonialsContainer,
 	.membersCompaniesWrapper {
-		padding: 0 50rem;
+		padding-left: 25rem;
+		padding-right: 25rem;
 	}
 	.mainSectionWrapper {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	.mainSectionWrapper,
+	.endSectionContainer,
+	.adVideosContainer,
+	.sneakPeakWrapper,
+	.testimonialsContainer,
+	.membersCompaniesWrapper {
+		padding: 1% 25%;
 	}
 }

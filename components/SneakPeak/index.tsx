@@ -10,7 +10,7 @@ function SneakPeak() {
 			<Row justify='space-between' align='middle'>
 				<Col xs={24} md={0}>
 					<Title id={styles.sneakPeakText}>
-						here&apos;s sneak peek of what we&apos;ve built.
+						here&apos;s sneak peek of what we&apos;ve built
 					</Title>
 				</Col>
 				<Col xs={24} md={11}>

@@ -1,5 +1,6 @@
 import { Col, Row } from 'antd'
 import React from 'react'
+import { useMediaQuery } from 'utils/useMediaQueries'
 import styles from './StatsBox.module.css'
 
 type StatsBoxPropsType = {
@@ -9,6 +10,8 @@ type StatsBoxPropsType = {
 }
 
 function StatsBox({ topText, bottomText, topBackground }: StatsBoxPropsType) {
+	const [width] = useMediaQuery()
+
 	return (
 		<>
 			<Row>
@@ -21,7 +24,12 @@ function StatsBox({ topText, bottomText, topBackground }: StatsBoxPropsType) {
 					</div>
 				</Col>
 			</Row>
-			<Row style={{ minHeight: '100%' }}>
+			<Row
+				style={{
+					minHeight: '100%',
+					textAlign: width > 4000 ? 'center' : 'left',
+				}}
+			>
 				<Col className={styles.statsBoxBottom}>{bottomText}</Col>
 			</Row>
 		</>

@@ -6,9 +6,11 @@ import styles from './Header.module.css'
 import Link from 'next/link'
 import { useAppDispatch } from 'app/hooks'
 import { toggleSidebar } from 'components/Layout/LayoutSlice'
+import { useMediaQuery } from 'utils/useMediaQueries'
 
 const Header = () => {
 	const dispatch = useAppDispatch()
+	const [width] = useMediaQuery()
 
 	return (
 		<Row className={styles.headerDiv} justify='space-between' align='middle'>
@@ -17,8 +19,8 @@ const Header = () => {
 					<Image
 						src='/assets/images/leap-club-logo.png'
 						alt='leap club logo'
-						width={70}
-						height={70}
+						width={width > 4000 ? 150 : 70}
+						height={width > 4000 ? 150 : 70}
 					/>
 				</Link>
 			</Col>

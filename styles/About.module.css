@@ -233,3 +233,26 @@
 		margin-bottom: 1.5rem;
 	}
 }
+
+@media screen and (min-width: 1900px) {
+	.aboutSectionWrapper,
+	.whyExistWrapper,
+	.genderGraphWrapper,
+	.statsWrapper,
+	.whatAreWeNotWrapper,
+	.currentOpeningsWrapper {
+		padding-left: 25rem;
+		padding-right: 25rem;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	.aboutSectionWrapper,
+	.whyExistWrapper,
+	.genderGraphWrapper,
+	.statsWrapper,
+	.whatAreWeNotWrapper,
+	.currentOpeningsWrapper {
+		padding: 2% 25%;
+	}
+}

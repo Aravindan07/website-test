@@ -28,6 +28,7 @@
 @media screen and (max-width: 800px) {
 	#headingText {
 		font-size: 18px;
+		text-align: center;
 	}
 
 	.companyCard {

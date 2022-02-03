@@ -10,13 +10,14 @@
 	width: 100%;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
 	.videoContainer {
 		height: 220px;
 	}
 	#sneakPeakText {
 		font-size: 18px;
 		line-height: 21px;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -29,5 +30,13 @@
 	#sneakPeakText {
 		font-size: 3.5rem;
 		line-height: 3.93rem;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	.videoContainer {
+		height: 700px;
+		width: 80%;
+		margin: 5rem 0;
 	}
 }

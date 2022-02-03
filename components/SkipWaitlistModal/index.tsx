@@ -7,12 +7,15 @@ import {
 	skipWaitlist,
 } from 'components/Waitlist/WaitlistSlice'
 import React, { useState } from 'react'
+import { useMediaQuery } from 'utils/useMediaQueries'
 import styles from './SkipWaitlistModal.module.css'
 
 function SkipWaitlistModal() {
 	const [confirmLoading, setConfirmLoading] = useState(false)
 	const [referralName, setReferralName] = useState('')
 	const [errorMsg, setErrorMsg] = useState('')
+
+	const [width] = useMediaQuery()
 
 	const dispatch = useAppDispatch()
 	const waitlist = useAppSelector((state) => state.waitlist)
@@ -85,6 +88,7 @@ function SkipWaitlistModal() {
 				paddingRight: '3rem',
 				paddingLeft: '3rem',
 			}}
+			width={width > 2500 ? '50%' : width < 800 ? '90%' : '60%'}
 			footer={renderFooter}
 			className={styles.modalContainer}
 		>

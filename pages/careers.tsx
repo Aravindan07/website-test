@@ -198,9 +198,9 @@ const Careers: NextPage = () => {
 					<Col xs={24}>
 						<Title
 							id={styles.foundingMembersSectionHeading}
+							className={styles.textHeader}
 							style={{
 								textAlign: 'center',
-								marginBottom: width > 2500 ? '8rem' : 0,
 							}}
 						>
 							📝 our values and guiding principles
@@ -261,9 +261,9 @@ const Careers: NextPage = () => {
 					<Col xs={24}>
 						<Title
 							id={styles.foundingMembersSectionHeading}
+							className={styles.textHeader}
 							style={{
 								textAlign: 'center',
-								marginBottom: width > 2500 ? '8rem' : 0,
 							}}
 						>
 							🎉 perks of working at leap.club
@@ -366,6 +366,7 @@ const Careers: NextPage = () => {
 							src='https://youtube.com/embed/Gtq-YL7fIVM'
 							title='Youtube Videos'
 							frameBorder='0'
+							className={styles.videosWeLikeContainer}
 						></iframe>
 					</Col>
 					<Col xs={24} md={7}>
@@ -375,6 +376,7 @@ const Careers: NextPage = () => {
 							src='https://youtube.com/embed/lXifOZ9dKgM'
 							title='Youtube Videos'
 							frameBorder='0'
+							className={styles.videosWeLikeContainer}
 						></iframe>
 					</Col>
 					<Col xs={24} md={7}>
@@ -384,6 +386,7 @@ const Careers: NextPage = () => {
 							src='https://youtube.com/embed/4icp1Bph8YU'
 							title='Youtube Videos'
 							frameBorder='0'
+							className={styles.videosWeLikeContainer}
 						></iframe>
 					</Col>
 				</Row>
@@ -425,7 +428,10 @@ const Careers: NextPage = () => {
 									margin: '0 auto',
 								}}
 							>
-								<Gallery rowHeight={width > 2500 ? 400 : 225} images={emails} />
+								<Gallery
+									rowHeight={width < 2500 ? 225 : width > 4000 ? 500 : 400}
+									images={emails}
+								/>
 							</div>
 						)}
 					</Col>

@@ -12,6 +12,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
+	const onClickHandler = () => {
+		document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
+	}
+
 	return (
 		<div>
 			<Head>
@@ -84,7 +88,7 @@ const Home: NextPage = () => {
 				<Col xs={24} md={12} xxl={9}>
 					<Jumbotron />
 				</Col>
-				<Col xs={24} md={11}>
+				<Col xs={24} md={11} id='waitlist'>
 					<Waitlist />
 				</Col>
 			</Row>
@@ -110,7 +114,7 @@ const Home: NextPage = () => {
 			</Row>
 			<Row className={styles.endSectionContainer}>
 				<Col span={24}>
-					<EndSection />
+					<EndSection onClickHandler={onClickHandler} />
 				</Col>
 			</Row>
 		</div>

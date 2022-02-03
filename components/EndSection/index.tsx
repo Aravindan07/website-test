@@ -4,11 +4,11 @@ import styles from './EndSection.module.css'
 
 const { Title } = Typography
 
-function EndSection() {
-	const onClickHandler = () => {
-		window.scrollTo(0, 0)
-	}
+type PropsType = {
+	onClickHandler: () => void
+}
 
+function EndSection({ onClickHandler }: PropsType) {
 	return (
 		<div className={styles.endSectionWrapper}>
 			<Title id={styles.endSectionText}>yeh kadam nahi chalang hai</Title>

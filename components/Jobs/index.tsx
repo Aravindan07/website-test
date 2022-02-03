@@ -1,13 +1,28 @@
 import { Button, Collapse, Typography } from 'antd'
 import React from 'react'
 import styles from './Jobs.module.css'
+import { DownOutlined, UpOutlined } from '@ant-design/icons'
+import { useMediaQuery } from 'utils/useMediaQueries'
 
 const { Panel } = Collapse
 const { Text } = Typography
 
 function Jobs() {
+	const [width] = useMediaQuery()
+
 	return (
-		<Collapse bordered={false} expandIconPosition='right' ghost>
+		<Collapse
+			bordered={false}
+			expandIconPosition='right'
+			ghost
+			expandIcon={({ isActive }) =>
+				isActive ? (
+					<UpOutlined style={{ fontSize: width > 2500 ? '2rem' : '1rem' }} />
+				) : (
+					<DownOutlined style={{ fontSize: width > 2500 ? '2rem' : '1rem' }} />
+				)
+			}
+		>
 			<Panel
 				header={'graphic designer'}
 				className={styles.panelContainer}
@@ -27,7 +42,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -57,7 +72,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -82,7 +97,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -107,7 +122,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -134,7 +149,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -159,7 +174,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -187,7 +202,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -213,7 +228,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -237,7 +252,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -263,7 +278,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -286,7 +301,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>
@@ -313,7 +328,7 @@ function Jobs() {
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
-							Send a mail
+							email us now
 						</Button>
 					</div>
 				</div>

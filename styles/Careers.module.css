@@ -192,6 +192,32 @@
 		font-size: 1.375rem;
 		line-height: 1.625rem;
 	}
+
+	.videosWeLikeContainer {
+		margin-bottom: 1rem;
+	}
+
+	.textHeader {
+		/* margin-bottom: width > 2500 ? '8rem' : 0, */
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	.titleWrapper,
+	.companyPitch,
+	.teamMembersWrapper,
+	.teamMembersVideosWrapper,
+	.perksSectionWrapper,
+	.jobsSectionWrapper,
+	.sampleJobVideosWrapper,
+	.emailsSectionWrapper,
+	.teamMembersPhotosWrapper,
+	.backedBySectionWrapper,
+	.featuredOnWrapper {
+		padding-right: 25rem;
+		padding-left: 25rem;
+	}
 }
 
 @media screen and (min-width: 2500px) {
@@ -225,6 +251,11 @@
 		line-height: 4.5rem;
 	}
 
+	.textHeader {
+		/* margin-bottom: width > 2500 ? '8rem' : 0, */
+		margin-bottom: 8rem;
+	}
+
 	#jobsSectionHeading {
 		font-size: 3.8rem;
 		line-height: 4.1rem;
@@ -255,5 +286,25 @@
 		font-size: 2.56rem;
 		line-height: 2.81rem;
 		margin-top: 3.75rem;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	/* .videosWeLikeContainer {
+		height: 500px;
+	} */
+	.titleWrapper,
+	.companyPitch,
+	.teamMembersWrapper,
+	.teamMembersVideosWrapper,
+	.perksSectionWrapper,
+	.jobsSectionWrapper,
+	.sampleJobVideosWrapper,
+	.emailsSectionWrapper,
+	.teamMembersPhotosWrapper,
+	.backedBySectionWrapper,
+	.featuredOnWrapper {
+		padding-right: 25%;
+		padding-left: 25%;
 	}
 }

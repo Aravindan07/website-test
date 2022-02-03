@@ -10,8 +10,12 @@
 
 @media screen and (max-width: 760px) {
 	.videoContainer {
-		height: 150px;
+		/* height: 250px; */
+		height: 250px;
+		width: 100%;
 		margin: 1rem 0;
+		object-fit: contain;
+		background-size: contain;
 	}
 	#titleText {
 		font-size: 18px;
@@ -30,5 +34,12 @@
 	#titleText {
 		font-size: 2.875rem;
 		line-height: 3.18rem;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	.videoContainer {
+		height: 600px;
+		/* width: 100%; */
 	}
 }

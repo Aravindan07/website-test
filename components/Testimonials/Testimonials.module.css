@@ -28,7 +28,7 @@
 	display: block;
 } */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
 	.carousel {
 		display: block;
 	}
@@ -37,6 +37,9 @@
 	}
 	.wrapper {
 		padding: 0;
+	}
+	.carouselImage {
+		background-color: #f6f6f6;
 	}
 }
 
@@ -62,5 +65,14 @@
 	}
 	.lastImage {
 		height: auto;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	.testimonial {
+		width: 97%;
+		height: 100%;
+		object-fit: contain;
+		/* margin: 1rem; */
 	}
 }

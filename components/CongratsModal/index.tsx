@@ -4,10 +4,12 @@ import { useAppDispatch, useAppSelector } from 'app/hooks'
 import { closeModal } from 'components/Waitlist/WaitlistSlice'
 import styles from 'components/SkipWaitlistModal/SkipWaitlistModal.module.css'
 import axios from 'axios'
+import { useMediaQuery } from 'utils/useMediaQueries'
 
 function CongratsModal() {
 	const dispatch = useAppDispatch()
 	const waitlist = useAppSelector((state) => state.waitlist)
+	const [width] = useMediaQuery()
 
 	const onOpenNewTab = () => {
 		let a = document.createElement('a')
@@ -66,6 +68,7 @@ function CongratsModal() {
 				paddingRight: '3rem',
 				paddingLeft: '3rem',
 			}}
+			width={width > 2500 ? '50%' : width < 800 ? '90%' : '60%'}
 			footer={renderFooter}
 			className={styles.modalContainer}
 		>

@@ -118,7 +118,11 @@ function About() {
 						why we <span style={{ color: 'red' }}>exist</span>
 					</Title>
 				</Col>
-				<Col xs={24} md={8} style={{ paddingRight: '1rem' }}>
+				<Col
+					xs={24}
+					md={8}
+					style={{ paddingRight: width > 2500 ? '5rem' : '1rem' }}
+				>
 					<Text id={styles.whyExistDescription}>
 						women continue to be the most untapped resource in the world and
 						once unleashed, have the superpower to change the world.

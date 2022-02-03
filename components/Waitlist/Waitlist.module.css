@@ -54,8 +54,7 @@
 @media screen and (max-width: 800px) {
 	.waitlistContainer {
 		margin-top: 1rem;
-		padding: 0;
-		padding-top: 1rem;
+		padding: 1rem 1rem;
 	}
 	.inputLabel {
 		margin-bottom: 2rem;
@@ -63,7 +62,7 @@
 	}
 	.input {
 		font-size: 0.8rem;
-		width: 90%;
+		width: 100%;
 	}
 }
 

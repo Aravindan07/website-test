@@ -136,7 +136,7 @@ const Footer = () => {
 				</Col>
 			</Row>
 
-			<Row justify='space-between'>
+			<Row justify={width > 800 ? 'space-between' : 'start'}>
 				<Col xs={24} md={11}>
 					<Text style={{ color: '#fff' }}>
 						copyright © 2022 konflake tech pvt. ltd. all rights reserved.
