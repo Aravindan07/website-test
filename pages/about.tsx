@@ -160,8 +160,10 @@ function About() {
 				<Col xs={24} md={12}>
 					<div
 						style={{
-							width: width > 800 ? '100%' : '200px',
-							height: width > 800 ? '100%' : '250px',
+							// width: width > 800 ? '100%' : width > 1900 ? '300px' : '200px',
+							// height: width > 800 ? '100%' : width > 1900 ? '300px' : '250px',
+							width: width > 1900 ? '300px' : width < 800 ? '200px' : '100%',
+							height: width > 1900 ? '300px' : width < 800 ? '200px' : '100%',
 							display: 'flex',
 							justifyContent: 'center',
 						}}
