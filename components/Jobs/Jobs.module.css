@@ -1,6 +1,7 @@
 .panelContainer {
 	font-size: 1.5rem;
-	margin: 1rem 0;
+	/* margin: 1rem 0; */
+	padding: 1rem 0;
 }
 
 .jobsPanel {
@@ -35,14 +36,16 @@
 
 	.panelContainer {
 		font-size: 1rem;
-		margin: 1rem 0;
+		/* margin: 1rem 0; */
+		padding: 1rem 0;
 	}
 }
 
 @media screen and (min-width: 2500px) {
 	.panelContainer {
 		font-size: 3.5rem;
-		margin: 3rem 0;
+		/* margin: 3rem 0; */
+		padding: 3rem 0;
 	}
 
 	#jobDescription {
