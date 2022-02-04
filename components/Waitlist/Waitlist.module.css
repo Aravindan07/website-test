@@ -1,7 +1,7 @@
 .waitlistContainer {
 	background-color: #fff;
 	border-radius: 17px;
-	min-height: 560px;
+	/* min-height: 560px; */
 	margin-top: 1rem;
 	padding: 2rem 2.93rem;
 }
@@ -84,6 +84,12 @@
 	.input {
 		font-size: 0.8rem;
 		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.waitlistContainer {
+		min-height: 500px;
 	}
 }
 

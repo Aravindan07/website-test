@@ -58,20 +58,6 @@ const Footer = () => {
 
 				<Col xs={24} md={11}>
 					<div className={styles.companyDetailsWrapperRight}>
-						{/* <a
-							href='https://www.producthunt.com/posts/leap-club?utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_souce=badge-leap-club'
-							target='_blank'
-							rel='noreferrer'
-						>
-							{/* <div style={{ width: '250px', height: '54px' }}> */}
-						{/* <Image
-							src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=310530&amp;theme=light&amp;period=daily'
-							alt='leap.club - A community-led professional network for women | Product Hunt'
-							width='250'
-							height='54'
-						/> */}
-						{/* </div> */}
-						{/* </a> */}
 						<div className={styles.socialHandles}>
 							<a
 								href='https://www.linkedin.com/company/leapclub'
@@ -149,7 +135,7 @@ const Footer = () => {
 							href='https://s3.ap-south-1.amazonaws.com/leap.club/assets/leap_terms+of+use.pdf'
 							target='_blank'
 							rel='noreferrer'
-							style={{ color: '#c1c1c1' }}
+							style={{ color: '#c1c1c1', textDecoration: 'underline' }}
 						>
 							terms and conditions
 						</a>
@@ -157,7 +143,7 @@ const Footer = () => {
 						<a
 							href='https://s3.ap-south-1.amazonaws.com/leap.club/assets/leap_privacy+policy.pdf'
 							target='_blank'
-							style={{ color: '#c1c1c1' }}
+							style={{ color: '#c1c1c1', textDecoration: 'underline' }}
 							rel='noreferrer'
 						>
 							privacy policy

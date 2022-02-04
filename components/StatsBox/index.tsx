@@ -17,7 +17,14 @@ function StatsBox({ topText, bottomText, topBackground }: StatsBoxPropsType) {
 			<Row>
 				<Col xs={24}>
 					<div
-						style={{ background: topBackground }}
+						style={{
+							background: topBackground,
+							// fontSize: topText === '$12 trillion' ? '1.5rem' : '',
+							// paddingLeft: topText === '$12 trillion' ? '0.3rem' : '0',
+							// paddingRight: topText === '$12 trillion' ? '0.3rem' : '0',
+							width:
+								topText === '$12 trillion' && width < 2500 ? '200px' : '100%',
+						}}
 						className={styles.statsBoxTop}
 					>
 						{topText}
@@ -27,7 +34,8 @@ function StatsBox({ topText, bottomText, topBackground }: StatsBoxPropsType) {
 			<Row
 				style={{
 					minHeight: '100%',
-					textAlign: width > 4000 ? 'center' : 'left',
+					textAlign: 'center',
+					width: topText === '$12 trillion' && width < 2500 ? '200px' : '100%',
 				}}
 			>
 				<Col className={styles.statsBoxBottom}>{bottomText}</Col>

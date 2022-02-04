@@ -24,7 +24,7 @@ const Jumbotron = () => {
 			</Row>
 			<Row style={{ marginTop: width > 800 ? '80px' : '33px' }}>
 				<Text id={styles.smallText}>
-					3500+ paying members across industries, experience levels, cities.
+					4000+ paying members across industries, experience levels, cities.
 					join the revolution!
 				</Text>
 			</Row>

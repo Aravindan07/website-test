@@ -253,6 +253,17 @@
 	.statsWrapper,
 	.whatAreWeNotWrapper,
 	.currentOpeningsWrapper {
+		padding: 2% 25rem;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	.aboutSectionWrapper,
+	.whyExistWrapper,
+	.genderGraphWrapper,
+	.statsWrapper,
+	.whatAreWeNotWrapper,
+	.currentOpeningsWrapper {
 		padding: 2% 25%;
 	}
 }

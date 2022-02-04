@@ -1,4 +1,4 @@
-import { Button, Collapse, Typography } from 'antd'
+import { Collapse, Typography } from 'antd'
 import React from 'react'
 import styles from './Jobs.module.css'
 import { DownOutlined, UpOutlined } from '@ant-design/icons'
@@ -14,7 +14,7 @@ function Jobs() {
 		<Collapse
 			bordered={false}
 			expandIconPosition='right'
-			ghost
+			// ghost
 			expandIcon={({ isActive }) =>
 				isActive ? (
 					<UpOutlined style={{ fontSize: width > 2500 ? '2rem' : '1rem' }} />
@@ -37,14 +37,14 @@ function Jobs() {
 						animation) is a must along with an in-depth knowledge of photoshop/
 						illustrator/ premier pro++.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -67,14 +67,14 @@ function Jobs() {
 						working. 4-6 years of content writing experience is a big plus. if
 						you spot an error on the above copy - extra brownie points!
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -92,14 +92,14 @@ function Jobs() {
 						everything runs on track. freshers preferred - this is a full-time
 						paid internship for a duration of 6 months.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -117,14 +117,14 @@ function Jobs() {
 						and build our founding team of a1 players. 4-5 years of relevant
 						experience in fast growing start ups is a plus.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -144,14 +144,14 @@ function Jobs() {
 						directly own leadership hiring. 10+ years of experience in a fast
 						paced startup is a huge plus. previous hr experience is not a must.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -169,14 +169,14 @@ function Jobs() {
 						and latest technologies with 2+ years experience in app development,
 						product design and architecture.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -197,14 +197,14 @@ function Jobs() {
 						cloud based backend systems, operate the backend at low latency,
 						high availability, and quality.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -223,14 +223,14 @@ function Jobs() {
 						end to end ownership and possess solid interpersonal skills. 1-3
 						years of community manager experience is a plus.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -247,14 +247,14 @@ function Jobs() {
 						membership via social channels. freshers preferred- this is a
 						full-time paid internship.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -273,14 +273,14 @@ function Jobs() {
 						as an analyst in a high growth startup or a management consulting is
 						a huge plus.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -296,14 +296,14 @@ function Jobs() {
 						experience in a fast-growing startup. female candidates preferred
 						since we are building a network for women.
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 
@@ -323,14 +323,14 @@ function Jobs() {
 						experience in building world class consumer tech products
 						(preferably in a fast growing start up).
 					</Text>
-					<div>
+					{/* <div>
 						<Button
 							id={styles.sendmailButton}
 							onClick={() => (window.location.href = 'mailto:jobs@leap.club')}
 						>
 							email us now
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</Panel>
 		</Collapse>

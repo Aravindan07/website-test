@@ -1,15 +1,29 @@
 import { Col, Row, Typography } from 'antd'
 import React from 'react'
 import styles from './AdVideos.module.css'
+import { useMediaQuery } from 'utils/useMediaQueries'
 
 const { Text } = Typography
 
 function AdVideos() {
+	const [width] = useMediaQuery()
+
 	return (
 		<div style={{ width: '100%' }}>
 			<Row gutter={16} justify='space-between' align='middle'>
-				<Col xs={24} md={8}>
-					<Text id={styles.titleText}>why we do, what we do</Text>
+				<Col
+					xs={24}
+					md={8}
+					style={{ textAlign: width < 800 ? 'center' : 'left' }}
+				>
+					{width > 800 ? (
+						<Text id={styles.titleText}>
+							why we do, <br />
+							what we do
+						</Text>
+					) : (
+						<Text id={styles.titleText}>why we do, what we do</Text>
+					)}
 				</Col>
 				<Col xs={24} md={8}>
 					<div className={styles.videoContainer}>

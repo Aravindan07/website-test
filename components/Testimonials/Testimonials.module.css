@@ -11,7 +11,8 @@
 }
 
 .lastImage {
-	height: 215px;
+	/* height: 215px */
+	height: auto;
 }
 
 .carousel {

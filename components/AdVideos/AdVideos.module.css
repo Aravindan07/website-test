@@ -8,7 +8,7 @@
 	height: 215px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
 	.videoContainer {
 		/* height: 250px; */
 		height: 250px;

@@ -38,14 +38,17 @@ const Header = () => {
 					<Link href='/' passHref>
 						<div className={styles.headerButton}>home</div>
 					</Link>
+
 					<Link href='/careers' passHref>
 						<div className={styles.headerButtonHighlighted}>
 							we&apos;re hiring
 						</div>
 					</Link>
+
 					<Link href='/about' passHref>
 						<div className={styles.headerButton}>about us</div>
 					</Link>
+
 					<a
 						href='https://leap.substack.com/'
 						target='_blank'
