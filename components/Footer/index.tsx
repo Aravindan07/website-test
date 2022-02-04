@@ -58,20 +58,20 @@ const Footer = () => {
 
 				<Col xs={24} md={11}>
 					<div className={styles.companyDetailsWrapperRight}>
-						<a
+						{/* <a
 							href='https://www.producthunt.com/posts/leap-club?utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_souce=badge-leap-club'
 							target='_blank'
 							rel='noreferrer'
 						>
 							{/* <div style={{ width: '250px', height: '54px' }}> */}
-							<Image
-								src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=310530&amp;theme=light&amp;period=daily'
-								alt='leap.club - A community-led professional network for women | Product Hunt'
-								width='250'
-								height='54'
-							/>
-							{/* </div> */}
-						</a>
+						{/* <Image
+							src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=310530&amp;theme=light&amp;period=daily'
+							alt='leap.club - A community-led professional network for women | Product Hunt'
+							width='250'
+							height='54'
+						/> */}
+						{/* </div> */}
+						{/* </a> */}
 						<div className={styles.socialHandles}>
 							<a
 								href='https://www.linkedin.com/company/leapclub'

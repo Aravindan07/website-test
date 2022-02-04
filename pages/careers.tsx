@@ -275,7 +275,7 @@ const Careers: NextPage = () => {
 						<Card
 							icon='/assets/icons/leave-policy.svg'
 							heading='flexible leave policy'
-							description='vacation leaves, wellness leaves, compulsory down time.we trust you to do the right thing'
+							description='vacation leaves, wellness leaves, compulsory down time'
 						/>
 					</Col>
 					<Col xs={24} md={7}>

@@ -76,7 +76,8 @@
 		margin-top: 1rem;
 		padding: 1rem 1rem;
 	}
-	.inputLabel {
+	.inputLabel,
+	.phoneInputLabel {
 		margin-bottom: 2rem;
 		font-size: 0.8rem;
 	}
@@ -91,7 +92,13 @@
 		font-size: 2.2rem;
 		line-height: 2.875rem;
 	}
-	.inputLabel {
+
+	.phoneInputLabel label {
+		font-size: 2.2rem;
+		line-height: 2.875rem;
+	}
+	.inputLabel,
+	.phoneInputLabel {
 		margin-bottom: 5rem;
 	}
 	.input {
