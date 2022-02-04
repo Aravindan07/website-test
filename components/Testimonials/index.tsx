@@ -19,7 +19,7 @@ function Testimonials() {
 				<Carousel style={{ height: '200px' }} autoplay>
 					<div style={contentStyle}>
 						<img
-							src='/assets/images/ss-1.jpg'
+							src='/assets/images/testimonial-1.jpeg'
 							alt='ss1'
 							className={styles.carouselImage}
 						/>
@@ -57,31 +57,40 @@ function Testimonials() {
 			<div className={styles.masonry}>
 				<Masonry columnsCount={2}>
 					<img
-						src='/assets/images/ss-1.jpg'
+						src='/assets/images/tt.jpeg'
 						alt='SS1'
 						className={styles.testimonial}
+						style={{ borderRadius: '10px', border: '1px solid black' }}
 					/>
+					{/* <div style={{ height: '50%', backgroundSize: 'contain' }}> */}
 					<img
 						src='/assets/images/ss-praj-twitter.jpg'
-						alt='SS1'
+						alt='SS2'
+						className={`${styles.testimonial}`}
+						style={{ borderRadius: '10px' }}
+					/>
+					{/* </div> */}
+					<img
+						src='/assets/images/testimonial-3.jpg'
+						alt='SS3'
 						className={`${styles.testimonial}`}
 						style={{ borderRadius: '10px' }}
 					/>
 					<img
-						src='/assets/images/ss-3.jpg'
-						alt='SS1'
-						className={`${styles.testimonial}`}
-					/>
-					<img
-						src='/assets/images/ss-5.jpg'
-						alt='SS1'
+						src='assets/images/testimonial-4.jpg'
+						alt='SS4'
 						className={styles.testimonial}
+						style={{ borderRadius: '10px' }}
 					/>
 					<img
-						src='/assets/images/ss-4.jpg'
-						alt='SS1'
+						src='/assets/images/testimonial.png'
+						alt='SS5'
 						className={`${styles.testimonial} ${styles.lastImage}`}
-						style={{ marginBottom: 0 }}
+						style={{
+							marginBottom: 0,
+							borderRadius: '10px',
+							border: '1px solid black',
+						}}
 					/>
 				</Masonry>
 			</div>

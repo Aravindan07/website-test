@@ -23,7 +23,9 @@ function StatsBox({ topText, bottomText, topBackground }: StatsBoxPropsType) {
 							// paddingLeft: topText === '$12 trillion' ? '0.3rem' : '0',
 							// paddingRight: topText === '$12 trillion' ? '0.3rem' : '0',
 							width:
-								topText === '$12 trillion' && width < 2500 ? '200px' : '100%',
+								topText === '$12 trillion' && width < 2500 && width > 800
+									? '200px'
+									: '100%',
 						}}
 						className={styles.statsBoxTop}
 					>
@@ -35,7 +37,10 @@ function StatsBox({ topText, bottomText, topBackground }: StatsBoxPropsType) {
 				style={{
 					minHeight: '100%',
 					textAlign: 'center',
-					width: topText === '$12 trillion' && width < 2500 ? '200px' : '100%',
+					width:
+						topText === '$12 trillion' && width < 2500 && width > 800
+							? '200px'
+							: '100%',
 				}}
 			>
 				<Col className={styles.statsBoxBottom}>{bottomText}</Col>

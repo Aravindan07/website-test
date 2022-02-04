@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button, Col, Row, Typography } from 'antd'
+import { Button, Carousel, Col, Row, Typography } from 'antd'
 import StatsBox from 'components/StatsBox'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -87,7 +87,7 @@ function About() {
 
 			<Row
 				justify='space-between'
-				align='middle'
+				// align='middle'
 				className={styles.aboutSectionWrapper}
 			>
 				<Col xs={24} md={12} xxl={9}>
@@ -97,13 +97,41 @@ function About() {
 						<span style={{ color: 'red' }}>professional network.</span>
 					</Title>
 				</Col>
-				<Col xs={24} md={11}>
+				<Col xs={24} md={10} xxl={10}>
 					<div className={styles.imageWrapper}>
-						<img
-							src='/assets/images/about-image.png'
-							className={styles.image}
-							alt='Mobile App Image'
-						/>
+						<Carousel autoplay>
+							<img
+								src='/assets/images/app-ss-1.jpg'
+								className={styles.image}
+								alt='Mobile App Image'
+							/>
+
+							<img
+								src='/assets/images/app-ss-2.jpg'
+								className={styles.image}
+								alt='Mobile App Image'
+							/>
+							<img
+								src='/assets/images/app-ss-3.jpg'
+								className={styles.image}
+								alt='Mobile App Image'
+							/>
+							<img
+								src='/assets/images/app-ss-4.jpg'
+								className={styles.image}
+								alt='Mobile App Image'
+							/>
+							<img
+								src='/assets/images/app-ss-5.jpg'
+								className={styles.image}
+								alt='Mobile App Image'
+							/>
+							<img
+								src='/assets/images/app-ss-6.jpg'
+								className={styles.image}
+								alt='Mobile App Image'
+							/>
+						</Carousel>
 					</div>
 				</Col>
 			</Row>
