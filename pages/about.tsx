@@ -18,7 +18,7 @@ function About() {
 		<div>
 			<Head>
 				<title>leap.club | more women in leadership positions</title>
-				<link rel='shortcut icon' href='/assets/favicon32.ico' />
+				<link rel='shortcut icon' href='/favicon32.ico' />
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'

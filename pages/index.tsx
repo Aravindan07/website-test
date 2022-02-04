@@ -11,6 +11,7 @@ import Waitlist from 'components/Waitlist'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+
 const Home: NextPage = () => {
 	const onClickHandler = () => {
 		document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 	return (
 		<div>
 			<Head>
+				<title>leap.club | more women in leadership positions</title>
 				<link rel='shortcut icon' href='/favicon32.ico' />
 				<meta
 					name='viewport'
