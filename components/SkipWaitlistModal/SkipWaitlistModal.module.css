@@ -1,3 +1,7 @@
+/* .modalContainer {
+	height: 50%;
+} */
+
 .modalContainer .ant-modal-footer {
 	text-align: left;
 	padding-right: 3rem;

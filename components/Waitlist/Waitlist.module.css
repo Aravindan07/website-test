@@ -22,10 +22,30 @@
 	margin-bottom: 1.5rem;
 }
 
+.phoneInputLabel {
+	/* position: relative; */
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 1.5rem;
+}
+
+.phoneInputLabel label {
+	padding-bottom: 0 !important;
+	align-items: baseline !important;
+}
+
+/* .phoneInputLabel .ant-form-item-label > label {
+	align-items: baseline;
+} */
+
 .spanText {
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 14px;
+	/* margin-bottom: 1.5rem; */
+	/* position: absolute;
+	top: 10px; */
 }
 
 #buttonPrimary {

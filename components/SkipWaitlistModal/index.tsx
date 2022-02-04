@@ -87,6 +87,7 @@ function SkipWaitlistModal() {
 				paddingBottom: '0rem',
 				paddingRight: '3rem',
 				paddingLeft: '3rem',
+				// height: '500px',
 			}}
 			width={width > 2500 ? '50%' : width < 800 ? '90%' : '60%'}
 			footer={renderFooter}
@@ -100,7 +101,7 @@ function SkipWaitlistModal() {
 				}}
 			>
 				<Text id={styles.headingText}>
-					thank you! 13,000+ women are ahead of you on the waitlist.{' '}
+					thank you! 15,000+ women are ahead of you on the waitlist.{' '}
 					<b>
 						there is a hack to jump straight to the top and become a member now
 						😉

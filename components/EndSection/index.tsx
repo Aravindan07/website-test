@@ -14,7 +14,7 @@ function EndSection({ onClickHandler }: PropsType) {
 			<Title id={styles.endSectionText}>yeh kadam nahi chalang hai</Title>
 			<Title id={styles.endSectionTextHindi}>ये कदम नहीं, छलांग है </Title>
 			<Button id={styles.buttonPrimary} onClick={onClickHandler}>
-				explore our membership
+				explore the membership
 			</Button>
 		</div>
 	)

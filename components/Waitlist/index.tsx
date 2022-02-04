@@ -57,7 +57,7 @@ function Waitlist() {
 					rules={[
 						{
 							required: true,
-							message: 'Please enter your email',
+							message: 'please enter your email',
 						},
 						() => ({
 							validator(_, value) {
@@ -65,7 +65,7 @@ function Waitlist() {
 									return Promise.reject()
 								}
 								if (!validateEmail(value.toLowerCase())) {
-									return Promise.reject('Please enter a valid email')
+									return Promise.reject('please enter a valid email')
 								}
 								return Promise.resolve()
 							},
@@ -79,7 +79,7 @@ function Waitlist() {
 					label='linkedin profile link'
 					name='linkedinProfileLink'
 					rules={[
-						{ required: true, message: 'Please enter your linkedin profile' },
+						{ required: true, message: 'please enter your linkedin profile' },
 					]}
 				>
 					<Input
@@ -88,20 +88,23 @@ function Waitlist() {
 					/>
 				</Form.Item>
 				<Form.Item
-					className={styles.inputLabel}
+					className={styles.phoneInputLabel}
 					label={
-						<p>
+						<div>
 							phone number <br />
 							<span className={styles.spanText}>
 								(this will help us contact you faster. we will never spam)
 							</span>
-						</p>
+						</div>
 					}
+					// {/* <span className={styles.spanText}>
+					// 			(this will help us contact you faster. we will never spam)
+					// 		</span> */}
 					name='phoneNumber'
 					rules={[
 						{
 							required: true,
-							message: 'Please enter your phone number',
+							message: 'please enter your phone number',
 							// pattern: new RegExp(/^[0-9]+$/),
 						},
 						() => ({
@@ -110,7 +113,7 @@ function Waitlist() {
 									return Promise.reject()
 								}
 								if (isNaN(value)) {
-									return Promise.reject('Please enter a valid phone number')
+									return Promise.reject('please enter a valid phone number')
 								}
 								if (value.length < 10) {
 									return Promise.reject(
@@ -128,6 +131,11 @@ function Waitlist() {
 						}),
 					]}
 				>
+					{/* <label>
+						<span className={styles.spanText}>
+							(this will help us contact you faster. we will never spam)
+						</span>
+					</label> */}
 					<Input
 						className={styles.input}
 						placeholder='we want to know you better'
