@@ -21,13 +21,6 @@
 	object-fit: contain;
 }
 
-.image {
-	border-radius: 5%;
-	max-height: 550px;
-	/* height: %; */
-	max-width: 80%;
-}
-
 .whyExistWrapper {
 	background-color: #fff;
 	padding: 5rem 7.3rem;
@@ -138,11 +131,6 @@
 		line-height: 5.68rem;
 	}
 
-	.image {
-		width: 60%;
-		height: 60%;
-	}
-
 	#whyExistDescription {
 		color: #333333;
 		font-size: 3.5rem;
@@ -199,12 +187,7 @@
 	.imageWrapper {
 		justify-content: center;
 	}
-	.image {
-		width: 100%;
-		height: 100%;
-		max-height: 100%;
-		max-width: 100%;
-	}
+
 	#whyExistDescription {
 		font-size: 1rem;
 		line-height: 1.3rem;
@@ -260,11 +243,6 @@
 		padding-left: 25rem;
 		padding-right: 25rem;
 	}
-
-	.image {
-		max-height: 80%;
-		max-width: 80%;
-	}
 }
 
 @media screen and (min-width: 2500px) {
@@ -290,9 +268,5 @@
 	.whatAreWeNotWrapper,
 	.currentOpeningsWrapper {
 		padding: 2% 25%;
-	}
-	.image {
-		max-height: 80%;
-		max-width: 80%;
 	}
 }

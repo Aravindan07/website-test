@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button, Carousel, Col, Row, Typography } from 'antd'
+import { Button, Col, Row, Typography } from 'antd'
+import MobileAppGallery from 'components/MobileAppGallery'
 import StatsBox from 'components/StatsBox'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -99,39 +100,7 @@ function About() {
 				</Col>
 				<Col xs={24} md={10} xxl={10}>
 					<div className={styles.imageWrapper}>
-						<Carousel autoplay>
-							<img
-								src='/assets/images/app-ss-1.jpg'
-								className={styles.image}
-								alt='Mobile App Image'
-							/>
-
-							<img
-								src='/assets/images/app-ss-2.jpg'
-								className={styles.image}
-								alt='Mobile App Image'
-							/>
-							<img
-								src='/assets/images/app-ss-3.jpg'
-								className={styles.image}
-								alt='Mobile App Image'
-							/>
-							<img
-								src='/assets/images/app-ss-4.jpg'
-								className={styles.image}
-								alt='Mobile App Image'
-							/>
-							<img
-								src='/assets/images/app-ss-5.jpg'
-								className={styles.image}
-								alt='Mobile App Image'
-							/>
-							<img
-								src='/assets/images/app-ss-6.jpg'
-								className={styles.image}
-								alt='Mobile App Image'
-							/>
-						</Carousel>
+						<MobileAppGallery />
 					</div>
 				</Col>
 			</Row>
@@ -188,8 +157,6 @@ function About() {
 				<Col xs={24} md={12}>
 					<div
 						style={{
-							// width: width > 800 ? '100%' : width > 1900 ? '300px' : '200px',
-							// height: width > 800 ? '100%' : width > 1900 ? '300px' : '250px',
 							width: width > 1900 ? '300px' : width < 800 ? '200px' : '100%',
 							height: width > 1900 ? '300px' : width < 800 ? '200px' : '100%',
 							display: 'flex',
@@ -298,8 +265,6 @@ function About() {
 								alt='team members'
 								width='100%'
 								height='100%'
-								// layout='fill'
-								// objectFit='contain'
 							/>
 						</div>
 					</Col>

@@ -16,12 +16,19 @@ const Header = () => {
 		<Row className={styles.headerDiv} justify='space-between' align='middle'>
 			<Col flex='none'>
 				<Link href='/' passHref>
-					<Image
-						src='/assets/images/leap-club-logo.png'
-						alt='leap club logo'
-						width={width > 4000 ? 150 : 70}
-						height={width > 4000 ? 150 : 70}
-					/>
+					<div
+						style={{ width: width > 800 ? '5vw' : '50px', maxWidth: '150px' }}
+					>
+						<Image
+							src='/assets/images/leap-club-logo.png'
+							alt='leap club logo'
+							// width={width > 4000 ? 150 : 70}
+							// height={width > 4000 ? 150 : 70}
+							width='100%'
+							height='100%'
+							objectFit='contain'
+						/>
+					</div>
 				</Link>
 			</Col>
 			<Col flex='auto'></Col>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/next-script-for-ga */
 import { Col, Row } from 'antd'
 import AdVideos from 'components/AdVideos'
 import CongratsModal from 'components/CongratsModal'
@@ -21,6 +22,20 @@ const Home: NextPage = () => {
 		<div>
 			<Head>
 				<title>leap.club | more women in leadership positions</title>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TPCMFN4");`,
+					}}
+				></script>
 				<link rel='shortcut icon' href='/favicon32.ico' />
 				<meta
 					name='viewport'
@@ -80,6 +95,16 @@ const Home: NextPage = () => {
 				/>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 			</Head>
+			{/* <!-- Google Tag Manager (noscript) --> */}
+			<noscript>
+				<iframe
+					src='https://www.googletagmanager.com/ns.html?id=GTM-TPCMFN4'
+					height='0'
+					width='0'
+					style={{ display: 'none', visibility: 'hidden' }}
+				></iframe>
+			</noscript>
+			{/* <!-- End Google Tag Manager (noscript) --> */}
 
 			{/* Loading Modals */}
 			<SkipWaitlistModal />

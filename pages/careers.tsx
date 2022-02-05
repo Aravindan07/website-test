@@ -1,28 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
-import { Carousel, Col, Row, Typography } from 'antd'
-import Card from 'components/Card'
+import { Col, Row, Typography } from 'antd'
 import TestimonialsCarousel from 'components/TestimonialsCarousel'
-import VideoCard from 'components/VideoCard'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Careers.module.css'
-import Gallery from 'react-grid-gallery'
-import { emails, investors } from 'constants/constants'
-import Image from 'next/image'
 import TeamGallery from 'components/TeamGallery'
-// import { useState } from 'react'
 import { useMediaQuery } from 'utils/useMediaQueries'
 import Jobs from 'components/Jobs'
+import TeamMembersVideos from 'components/TeamMembersVideos'
+import ValuesAndPrinciples from 'components/ValuesAndPrinciples'
+import PerksSection from 'components/PerksSection'
+import SampleJobVideos from 'components/SampleJobVideos'
+import EmailsWeLike from 'components/EmailsWeLike'
+import BackedBy from 'components/BackedBy'
+import FeaturedOn from 'components/FeaturedOn'
+import TeamFaces from 'components/TeamFaces'
 
 const { Title, Text } = Typography
 
 const Careers: NextPage = () => {
-	// const [isOpen, setIsOpen] = useState('')
 	const [width] = useMediaQuery()
-
-	// const onJobBoxClick = (job: string) => {
-	// 	setIsOpen(job)
-	// }
 
 	return (
 		<div>
@@ -136,6 +133,7 @@ const Careers: NextPage = () => {
 				</Col>
 			</Row>
 
+			{/* Team Members Gallery */}
 			<div className={styles.teamMembersWrapper}>
 				<Row>
 					<Col xs={24}>
@@ -152,6 +150,7 @@ const Careers: NextPage = () => {
 					</Col>
 				</Row>
 			</div>
+			{/* End of Team Members Gallery */}
 
 			{/* Team Members Videos Section */}
 			<div className={styles.teamMembersVideosWrapper}>
@@ -163,34 +162,9 @@ const Careers: NextPage = () => {
 						</Title>
 					</Col>
 				</Row>
-
-				<Row justify='space-between' style={{ padding: '0.5rem' }}>
-					<Col xs={24} md={6}>
-						<VideoCard
-							link='https://youtube.com/embed/SihSIlXQFm4'
-							text='‘meet our first team member’'
-						/>
-					</Col>
-					<Col xs={24} md={6}>
-						<VideoCard
-							link='https://youtube.com/embed/FdJmM2AaZmA'
-							text='‘building leap with an incredible team’'
-						/>
-					</Col>
-					<Col xs={24} md={6}>
-						<VideoCard
-							link='https://youtube.com/embed/QG9DWbylotE'
-							text='‘becoming a founding team member’'
-						/>
-					</Col>
-					<Col xs={24} md={6}>
-						<VideoCard
-							link='https://youtube.com/embed/5ECw8jpAC1o'
-							text="‘shit we've heard while building leap.club’"
-						/>
-					</Col>
-				</Row>
+				<TeamMembersVideos />
 			</div>
+			{/* End of Team Members Videos Section */}
 
 			{/* Values and guiding principles section */}
 			<div className={styles.teamMembersVideosWrapper}>
@@ -207,53 +181,10 @@ const Careers: NextPage = () => {
 						</Title>
 					</Col>
 				</Row>
-				<Row justify='space-between'>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/think.svg'
-							heading='first principle thinking'
-							description='when in doubt, ask yourself, will this help our mission? if yes, do it'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/process.svg'
-							heading='process ≠ progress'
-							description='innovation is our best friend and getting attached to a process, our worst enemy. everything can be improved'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/80-20.svg'
-							heading='80/20'
-							description="feedback moves things forward and helps you grow. don't get offended or take it personally. when giving feedback, focus on the 'delta'. the 20% that can change the 80%"
-						/>
-					</Col>
-				</Row>
-				<Row justify='space-between' style={{ marginTop: '2rem' }}>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/dream-big.svg'
-							heading='dream big'
-							description='we believe we are building a multi unicorn. remember, nothing big ever comes easy. work hard. enjoy the ride'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/right.svg'
-							heading='right > fast'
-							description='play the long game'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/priority.svg'
-							heading='prioritize ruthlessly'
-							description='focus on needle movers only'
-						/>
-					</Col>
-				</Row>
+
+				<ValuesAndPrinciples />
 			</div>
+			{/* End of Values and guiding principles section */}
 
 			{/* Perks Section */}
 			<div className={styles.perksSectionWrapper}>
@@ -270,53 +201,9 @@ const Careers: NextPage = () => {
 						</Title>
 					</Col>
 				</Row>
-				<Row justify='space-between'>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/leave-policy.svg'
-							heading='flexible leave policy'
-							description='vacation leaves, wellness leaves, compulsory down time'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/5-day-work.svg'
-							heading='5 day work week'
-							description='we try to combine speed with enough downtime. burnouts are real'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/esop.svg'
-							heading="esop's & regular appraisals"
-							description="let's win together"
-						/>
-					</Col>
-				</Row>
-				<Row justify='space-between' style={{ marginTop: '2rem' }}>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/remote-work.svg'
-							heading='remote work'
-							description='gurgaon is our hq but you decide where you want to work from'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/dreamers.svg'
-							heading='dreamers'
-							description='you work with folks who dream big and want to build a multi unicorn'
-						/>
-					</Col>
-					<Col xs={24} md={7}>
-						<Card
-							icon='/assets/icons/diversity.svg'
-							heading='diversity goals'
-							description='72% of the team is women'
-						/>
-					</Col>
-				</Row>
+				<PerksSection />
 			</div>
+			{/* End of Perks Section */}
 
 			{/* Jobs Section */}
 			<div className={styles.jobsSectionWrapper}>
@@ -344,6 +231,7 @@ const Careers: NextPage = () => {
 					</Text>
 				</div>
 			</div>
+			{/*End of Jobs Section */}
 
 			{/* Sample Job Videos */}
 			<div className={styles.sampleJobVideosWrapper}>
@@ -357,41 +245,11 @@ const Careers: NextPage = () => {
 						</Title>
 					</Col>
 				</Row>
-
-				<Row justify='space-between'>
-					<Col xs={24} md={7}>
-						<iframe
-							width='100%'
-							height={width > 2500 ? '400' : '200'}
-							src='https://youtube.com/embed/Gtq-YL7fIVM'
-							title='Youtube Videos'
-							frameBorder='0'
-							className={styles.videosWeLikeContainer}
-						></iframe>
-					</Col>
-					<Col xs={24} md={7}>
-						<iframe
-							width='100%'
-							height={width > 2500 ? '400' : '200'}
-							src='https://youtube.com/embed/lXifOZ9dKgM'
-							title='Youtube Videos'
-							frameBorder='0'
-							className={styles.videosWeLikeContainer}
-						></iframe>
-					</Col>
-					<Col xs={24} md={7}>
-						<iframe
-							width='100%'
-							height={width > 2500 ? '400' : '200'}
-							src='https://youtube.com/embed/4icp1Bph8YU'
-							title='Youtube Videos'
-							frameBorder='0'
-							className={styles.videosWeLikeContainer}
-						></iframe>
-					</Col>
-				</Row>
+				<SampleJobVideos />
 			</div>
+			{/*End of Sample Job Videos */}
 
+			{/* Emails we Like Section */}
 			<div className={styles.emailsSectionWrapper}>
 				<Row justify='center'>
 					<Col xs={24}>
@@ -403,40 +261,9 @@ const Careers: NextPage = () => {
 						</Title>
 					</Col>
 				</Row>
-
-				<Row justify='center'>
-					<Col xs={24}>
-						{width < 800 ? (
-							<Carousel autoplay>
-								{emails.map((email, index) => (
-									<div key={index}>
-										<img
-											src={email.src}
-											width='100%'
-											height='100%'
-											alt='Team'
-											loading='lazy'
-										/>
-									</div>
-								))}
-							</Carousel>
-						) : (
-							<div
-								style={{
-									// display: 'block',
-									width: width > 2500 ? '2000px' : '100%',
-									margin: '0 auto',
-								}}
-							>
-								<Gallery
-									rowHeight={width < 2500 ? 225 : width > 4000 ? 500 : 400}
-									images={emails}
-								/>
-							</div>
-						)}
-					</Col>
-				</Row>
+				<EmailsWeLike />
 			</div>
+			{/*End of Emails we Like Section */}
 
 			{/* Team faces */}
 			<div className={styles.teamMembersPhotosWrapper}>
@@ -450,223 +277,16 @@ const Careers: NextPage = () => {
 						</Title>
 					</Col>
 				</Row>
-
-				<Row justify='center'>
-					<Col xs={24} md={12}>
-						<Carousel autoplay>
-							<div className={styles.teamImageStyle}>
-								<img
-									src='/assets/images/team-image-1.jpg'
-									width='100%'
-									height='100%'
-									alt='Team'
-									loading='lazy'
-								/>
-							</div>
-							<div className={styles.teamImageStyle}>
-								<img
-									src='/assets/images/team-image-2.jpg'
-									width='100%'
-									height='100%'
-									alt='Team'
-									loading='lazy'
-								/>
-							</div>
-							<div className={styles.teamImageStyle}>
-								<img
-									src='/assets/images/team-image-3.jpg'
-									width='100%'
-									height='100%'
-									alt='Team'
-									loading='lazy'
-								/>
-							</div>
-							<div className={styles.teamImageStyle}>
-								<img
-									src='/assets/images/team-image-4.jpg'
-									width='100%'
-									height='100%'
-									alt='Team'
-									loading='lazy'
-								/>
-							</div>
-						</Carousel>
-					</Col>
-				</Row>
+				<TeamFaces />
 			</div>
 
-			{/* Backed By Section */}
-			<div className={styles.backedBySectionWrapper}>
-				<Row justify='center'>
-					<Col xs={24}>
-						<Title
-							style={{ textAlign: 'center' }}
-							id={styles.foundingMembersSectionHeading}
-						>
-							we are backed by the{' '}
-							<span
-								style={{
-									color: '#F42B4D',
-								}}
-							>
-								best
-							</span>
-						</Title>
-					</Col>
-				</Row>
+			{/* End of Team faces */}
 
-				<Row
-					gutter={[8, 8]}
-					justify={width > 800 ? 'space-between' : 'center'}
-					align='middle'
-					style={{ width: '100%' }}
-				>
-					<Col className='gutter-row' xs={12} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/firstcheque.png'
-								alt='companies logo'
-								width={width > 2500 ? '350' : '150'}
-								height='100%'
-								// layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-					<Col className='gutter-row' xs={12} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/whiteboard_capital.png'
-								alt='companies logo'
-								width={width > 2500 ? '350' : '150'}
-								height='100%'
-								// layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-					<Col className='gutter-row' xs={12} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/enzia.png'
-								alt='companies logo'
-								width={width > 2500 ? '350' : '150'}
-								height='100%'
-								// layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-					<Col className='gutter-row' xs={12} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/artha_ventures.png'
-								alt='companies logo'
-								width={width > 2500 ? '350' : '150'}
-								height='100%'
-								// layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-					<Col className='gutter-row' xs={12} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/titan_capital.png'
-								alt='companies logo'
-								width={width > 2500 ? '350' : '150'}
-								height='100%'
-								// layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-				</Row>
+			<BackedBy />
 
-				{width < 800 ? (
-					<Carousel autoplay>
-						{investors.map((investor, index) => (
-							<div key={index} className={styles.investorsCard}>
-								<Image
-									src={investor.src}
-									alt='companies logo'
-									width='150'
-									height='200'
-									// layout='fill'
-									objectFit='contain'
-								/>
-								<Text id={styles.investorName}>{investor.name}</Text>
-								<Text id={styles.investorDescription}>
-									{investor.description}
-								</Text>
-							</div>
-						))}
-					</Carousel>
-				) : (
-					<>
-						<Row
-							gutter={[8, 8]}
-							justify={width > 800 ? 'space-between' : 'center'}
-							align='middle'
-							style={{ width: '100%', marginTop: '2rem' }}
-						>
-							{investors.slice(0, 4).map((investor) => (
-								<Col key={investor.id} className='gutter-row' xs={12} md={4}>
-									<div className={styles.investorsCard}>
-										<Image
-											src={investor.src}
-											alt='companies logo'
-											width={width > 2500 ? '350' : '150'}
-											height={width > 2500 ? '300' : '150'}
-											// layout='fill'
-											objectFit='contain'
-										/>
-										<Text id={styles.investorName}>{investor.name}</Text>
-										<Text id={styles.investorDescription}>
-											{investor.description}
-										</Text>
-									</div>
-								</Col>
-							))}
-						</Row>
+			{/* End Of Backed By Section */}
 
-						<Row
-							gutter={[8, 8]}
-							justify={width > 800 ? 'space-between' : 'center'}
-							align='middle'
-							style={{ width: '100%' }}
-						>
-							{investors.slice(4, 8).map((investor) => (
-								<Col key={investor.id} className='gutter-row' xs={12} md={4}>
-									<div className={styles.investorsCard}>
-										<Image
-											src={investor.src}
-											alt='companies logo'
-											width='150'
-											height='200'
-											// layout='fill'
-											objectFit='contain'
-										/>
-										<Text id={styles.investorName}>{investor.name}</Text>
-										<Text id={styles.investorDescription}>
-											{investor.description}
-										</Text>
-									</div>
-								</Col>
-							))}
-						</Row>
-					</>
-				)}
-
-				<Row>
-					<Col xs={24}>
-						<Title style={{ textAlign: 'center' }} id={styles.andMoreText}>
-							and more
-						</Title>
-					</Col>
-				</Row>
-			</div>
-
+			{/* Featured on Section */}
 			<div className={styles.featuredOnWrapper}>
 				<Row justify='center'>
 					<Col xs={24}>
@@ -678,62 +298,9 @@ const Careers: NextPage = () => {
 						</Title>
 					</Col>
 				</Row>
-
-				<Row
-					gutter={[8, 8]}
-					justify='space-between'
-					align='middle'
-					style={{ width: '100%' }}
-				>
-					<Col className='gutter-row' xs={24} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/et.png'
-								alt='companies logo'
-								layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-					<Col className='gutter-row' xs={24} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/yourstory.png'
-								alt='companies logo'
-								layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-					<Col className='gutter-row' xs={24} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/inc42.png'
-								alt='companies logo'
-								layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-					<Col className='gutter-row' xs={24} md={4}>
-						<div className={styles.companyCard}>
-							<Image
-								src='/assets/images/fortune.png'
-								alt='companies logo'
-								layout='fill'
-								objectFit='contain'
-							/>
-						</div>
-					</Col>
-				</Row>
-				<Row>
-					<Col xs={24}>
-						<Title style={{ textAlign: 'center' }} id={styles.andMoreText}>
-							and more
-						</Title>
-					</Col>
-				</Row>
+				<FeaturedOn />
 			</div>
+			{/* Featured on Section */}
 		</div>
 	)
 }
