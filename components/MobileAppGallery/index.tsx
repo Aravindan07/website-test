@@ -4,7 +4,7 @@ import styles from './MobileAppGallery.module.css'
 
 function MobileAppGallery() {
 	return (
-		<Carousel autoplay>
+		<Carousel autoplay style={{ display: 'flex', justifyContent: 'center' }}>
 			<img
 				src='/assets/images/app-ss-1.jpg'
 				className={styles.image}

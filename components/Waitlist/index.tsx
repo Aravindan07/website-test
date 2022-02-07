@@ -4,6 +4,13 @@ import styles from './Waitlist.module.css'
 import { useAppDispatch, useAppSelector } from 'app/hooks'
 import { joinWaitlist, openSkipWaitlistModal } from './WaitlistSlice'
 
+declare global {
+	// eslint-disable-next-line no-unused-vars
+	interface Window {
+		lintrk: any
+	}
+}
+
 function Waitlist() {
 	const [form] = Form.useForm()
 	const dispatch = useAppDispatch()
@@ -20,6 +27,7 @@ function Waitlist() {
 		console.log('Success:', values)
 		try {
 			setLoading(true)
+			await window.lintrk('track', { conversion_id: 7081729 })
 			const data = await dispatch(
 				joinWaitlist({
 					email: values.email,

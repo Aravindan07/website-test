@@ -1,18 +1,6 @@
 import { Action, createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { joinWaitlistApi, skipWaitlistApi } from './WaitlistAPI'
 
-// type ReturnDatatype = {
-// 	status: string
-// 	isAuthenticated: boolean
-// 	user: null | any
-// 	message?: null | string
-// 	token: string
-// }
-
-// interface MyKnownError {
-// 	message: string
-// }
-
 export type SuccessObjectType = {
 	email: string
 	linkedinUrl: string

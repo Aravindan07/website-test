@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/next-script-for-ga */
 import { Col, Row } from 'antd'
 import AdVideos from 'components/AdVideos'
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
 		<div>
 			<Head>
 				<title>leap.club | more women in leadership positions</title>
+				{/* <!-- Google Tag Manager --> */}
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `(function (w, d, s, l, i) {
@@ -36,6 +38,20 @@ const Home: NextPage = () => {
 			})(window, document, "script", "dataLayer", "GTM-TPCMFN4");`,
 					}}
 				></script>
+
+				<script
+					async
+					src='https://www.googletagmanager.com/gtag/js?id=UA-156456027-1'
+				></script>
+				<script
+					type='text/javascript'
+					dangerouslySetInnerHTML={{
+						__html: `
+				var googleTrackingId = "UA-156456027-1";`,
+					}}
+				></script>
+				{/* <!-- End Google Tag Manager --> */}
+
 				<link rel='shortcut icon' href='/favicon32.ico' />
 				<meta
 					name='viewport'
@@ -95,6 +111,7 @@ const Home: NextPage = () => {
 				/>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 			</Head>
+
 			{/* <!-- Google Tag Manager (noscript) --> */}
 			<noscript>
 				<iframe
@@ -105,6 +122,78 @@ const Home: NextPage = () => {
 				></iframe>
 			</noscript>
 			{/* <!-- End Google Tag Manager (noscript) --> */}
+
+			{/* Linkedin Insight tag */}
+			<script
+				dangerouslySetInnerHTML={{
+					__html: `
+					_linkedin_partner_id = "4162545";
+					window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+					window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+					`,
+				}}
+			></script>
+
+			<script
+				dangerouslySetInnerHTML={{
+					__html: `
+					(
+						function(l) {
+						if (!l){
+							window.lintrk = function(a,b){
+							window.lintrk.q.push([a,b])
+						};
+							window.lintrk.q=[]
+						}
+						var s = document.getElementsByTagName("script")[0];
+						var b = document.createElement("script");
+						b.type = "text/javascript";b.async = true;
+						b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+						s.parentNode.insertBefore(b, s);
+					})(window.lintrk);
+					`,
+				}}
+			></script>
+			<noscript>
+				<img
+					height='1'
+					width='1'
+					style={{ display: 'none' }}
+					alt=''
+					src='https://px.ads.linkedin.com/collect/?pid=4162545&fmt=gif'
+				/>
+			</noscript>
+
+			{/* <!-- Meta Pixel Code --> */}
+			<script
+				dangerouslySetInnerHTML={{
+					__html: `
+		!function(f,b,e,v,n,t,s)
+		{
+			if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '662548621616004');
+		fbq('track', 'PageView');
+	`,
+				}}
+			></script>
+			<noscript>
+				<img
+					height='1'
+					width='1'
+					style={{ display: 'none' }}
+					alt=''
+					src='https://www.facebook.com/tr?id=662548621616004&ev=PageView&noscript=1'
+				/>
+			</noscript>
+			{/* <!-- End Meta Pixel Code → */}
+
+			{/* Starting of Actual Code */}
 
 			{/* Loading Modals */}
 			<SkipWaitlistModal />
